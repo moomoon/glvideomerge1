@@ -12,7 +12,10 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.widget.LinearLayout;
 
+import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.egl.EGLContext;
+import javax.microedition.khronos.egl.EGLDisplay;
 import javax.microedition.khronos.opengles.GL10;
 
 public class GLSurfaceViewActivity extends Activity {
@@ -73,7 +76,12 @@ public class GLSurfaceViewActivity extends Activity {
 	}
 
 	private void playback() {
-		mMediaPlayer = new MediaPlayer();
+
+
+
+
+
+        mMediaPlayer = new MediaPlayer();
 		try {
 			mMediaPlayer.setDataSource(Environment.getExternalStorageDirectory().getPath() + "/Movies/002-user-authentication.mp4");
 			mMediaPlayer.setDisplay(mSurfaceView.getHolder());

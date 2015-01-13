@@ -2,23 +2,34 @@ package me.crossle.demo.surfacetexture;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.SurfaceTexture;
 import android.media.MediaPlayer;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.Surface;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
+import java.nio.IntBuffer;
+import java.nio.ShortBuffer;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
+import javax.microedition.khronos.opengles.GL11;
+
+import jcodec.api.SequenceEncoder;
 
 @SuppressLint("ViewConstructor")
 class VideoSurfaceView extends GLSurfaceView {
@@ -29,6 +40,7 @@ class VideoSurfaceView extends GLSurfaceView {
     private int mHeight, mWidth;
     private float mOffsetX, mOffsetY;
 
+
     public VideoSurfaceView(Context context, MediaPlayer mp0, MediaPlayer mp1) {
         super(context);
 
@@ -37,7 +49,7 @@ class VideoSurfaceView extends GLSurfaceView {
         mMediaPlayer1 = mp1;
         mRenderer = new VideoRender(context);
         setRenderer(mRenderer);
-        mDetector = new GestureDetector(context,new GestureDetector.OnGestureListener(){
+        mDetector = new GestureDetector(context, new GestureDetector.OnGestureListener() {
             @Override
             public boolean onDown(MotionEvent e) {
                 return false;
@@ -78,10 +90,21 @@ class VideoSurfaceView extends GLSurfaceView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+
         this.mHeight = MeasureSpec.getSize(heightMeasureSpec);
         this.mWidth = MeasureSpec.getSize(widthMeasureSpec);
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+//        try {
+//            mRenderer.androidEncoder.finish();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Override
@@ -96,8 +119,8 @@ class VideoSurfaceView extends GLSurfaceView {
     }
 
 
-
     private GestureDetector mDetector;
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         mDetector.onTouchEvent(event);
@@ -122,6 +145,7 @@ class VideoSurfaceView extends GLSurfaceView {
         };
 
         private FloatBuffer mTriangleVertices;
+        private File file = new File(Environment.getExternalStorageDirectory() + "/test.mp4");
 
         private final String mVertexShader =
                 "uniform mat4 uMVPMatrix;\n" +
@@ -176,7 +200,14 @@ class VideoSurfaceView extends GLSurfaceView {
 
         private float transX, transY, transZ;
 
-        public void setTranslate(float x, float y, float z){
+        private IntBuffer fbTexture;
+//        private ByteBuffer fbTextureByte;
+
+        private int[] pixels = new int[640 * 480];
+
+        Bitmap cache;
+
+        public void setTranslate(float x, float y, float z) {
             this.transX = x;
             this.transY = y;
             this.transZ = z;
@@ -190,6 +221,9 @@ class VideoSurfaceView extends GLSurfaceView {
 
             Matrix.setIdentityM(mSTMatrix0, 0);
             Matrix.setIdentityM(mSTMatrix1, 0);
+
+            fbTexture = IntBuffer.allocate(640 * 480);
+//            fbTextureByte = ByteBuffer.allocate(640 * 480 * 4);
         }
 
         public void setMediaPlayer(MediaPlayer player0, MediaPlayer player1) {
@@ -212,6 +246,7 @@ class VideoSurfaceView extends GLSurfaceView {
                 }
             }
 
+            GLES20.glUseProgram(mProgram);
 
             GLES20.glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
             GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT | GLES20.GL_COLOR_BUFFER_BIT);
@@ -234,7 +269,6 @@ class VideoSurfaceView extends GLSurfaceView {
 //            GLES20.glUniform1i(t2h, 2);
 //            checkGlError("gluniform11");
 
-            GLES20.glUseProgram(mProgram);
             checkGlError("glUseProgram");
 
             mTriangleVertices.position(TRIANGLE_VERTICES_DATA_POS_OFFSET);
@@ -259,17 +293,70 @@ class VideoSurfaceView extends GLSurfaceView {
 
             GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4);
             checkGlError("glDrawArrays");
+            fbTexture.position(0);
+//            fbTextureByte.position(0);
+            Log.e("readpixel", "log stub");
+            Log.e("readpixel " + ++count, "before read");
+//            GLES20.glReadPixels(0, 0, 500, 500, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, fbTexture);
+            GLES20.glReadPixels(0, 0, 640, 480, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, fbTexture);
+//            GLES20.glReadPixels(0, 0, 640, 480, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, fbTextureByte);
+            Log.e("readpixel " + count, "before get");
+            Log.e("readpixel " + count, "before get");
+            fbTexture.position(0);
+            fbTexture.get(pixels);
+//            byte[] yuv = new byte[640 * 480 * 3 / 2];
+//            FrameUtils.encodeYUV420SP(yuv, pixels, 640, 480);
+//            try {
+//                Log.e("readpixel " + count, "before create");
+//                encoder.encode(yuv, 0, 640 * 480);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+            encoderWrapper.feed(pixels);
+            Log.e("readpixel " + count, "end");
+//            cache = Bitmap.createBitmap(pixels, 500, 500, Bitmap.Config.ARGB_8888);
+//            cache.copyPixelsFromBuffer(fbTexture);
+//            try {
+//                androidEncoder.encodeImage(cache);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
             GLES20.glFinish();
 
         }
+
+        private VideoEncoder encoder = VideoEncoder.create(Environment.getExternalStorageDirectory() + File.separator + "videoEncoder.3gp", 640, 480, 30);
+
+        private AltEncoderWrapper encoderWrapper = new AltEncoderWrapper(640, 320, 30, 1000000, Environment.getExternalStorageDirectory() + File.separator + "altencoder.3gp");
+
+
+        int count = 0;
+
 
         @Override
         public void onSurfaceChanged(GL10 glUnused, int width, int height) {
 
         }
 
+//        private jcodec.api.android.SequenceEncoder androidEncoder;
+
         @Override
         public void onSurfaceCreated(GL10 glUnused, EGLConfig config) {
+            encoderWrapper.start();
+            if (file.exists()) {
+                file.delete();
+            }
+//            try {
+//                file.createNewFile();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            try {
+//                androidEncoder = new jcodec.api.android.SequenceEncoder(file);
+//            } catch (IOException e) {
+//                Log.e("encoder constructor", "construct");
+//                e.printStackTrace();
+//            }
             mProgram = createProgram(mVertexShader, mFragmentShader);
             if (mProgram == 0) {
                 return;
@@ -308,7 +395,7 @@ class VideoSurfaceView extends GLSurfaceView {
 
 
             int t0h = GLES20.glGetUniformLocation(mProgram, "sTexture0");
-            Log.e("t0h","= " + t0h);
+            Log.e("t0h", "= " + t0h);
             GLES20.glUniform1i(t0h, 0);
 
             GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
@@ -327,10 +414,8 @@ class VideoSurfaceView extends GLSurfaceView {
                     GLES20.GL_LINEAR);
 
 
-
-
             int t1h = GLES20.glGetUniformLocation(mProgram, "sTexture1");
-            Log.e("t1h","= " + t1h);
+            Log.e("t1h", "= " + t1h);
             GLES20.glUniform1i(t1h, 1);
             GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
             GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[1]);
@@ -362,6 +447,7 @@ class VideoSurfaceView extends GLSurfaceView {
                 }
             });
 
+
             Surface surface = new Surface(surface0);
             mediaPlayer0.setSurface(surface);
             mediaPlayer0.setScreenOnWhilePlaying(true);
@@ -385,6 +471,20 @@ class VideoSurfaceView extends GLSurfaceView {
 
             mediaPlayer0.start();
             mediaPlayer1.start();
+
+            new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                @Override
+                public void run() {
+//                    try {
+//                        androidEncoder.finish();
+                    Log.e("encode end", "send eos");
+//                        encoder.encode(null, 0, -1);
+                    encoderWrapper.stop();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+                }
+            }, 20000);
         }
 
 

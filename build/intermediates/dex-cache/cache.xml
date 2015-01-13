@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\glvideomerge1\app\build\intermediates\exploded-aar\glvideomerge1\jcodec\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="063bdf41fada76dd2e6ef6717f8c4999d24c020e">
+        <dex dex="E:\glvideomerge1\app\build\intermediates\pre-dexed\debug\classes-f7c617e07a3e35c98f4694d67bd714c8f852d29a.jar" />
+    </item>
+
+</items>
