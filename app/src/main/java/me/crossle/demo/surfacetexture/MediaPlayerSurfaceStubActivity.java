@@ -9,43 +9,47 @@ import android.util.Log;
 
 public class MediaPlayerSurfaceStubActivity extends Activity {
 
-	private static final String TAG = "MediaPlayerSurfaceStubActivity";
+    private static final String TAG = "MediaPlayerSurfaceStubActivity";
 
-	protected Resources mResources;
+    protected Resources mResources;
 
-	private VideoSurfaceView mVideoView = null;
-	private MediaPlayer mMediaPlayer0 = null;
-	private MediaPlayer mMediaPlayer1 = null;
+    private VideoSurfaceView mVideoView = null;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
 
-		mResources = getResources();
-		mMediaPlayer0 = new MediaPlayer();
-		mMediaPlayer1 = new MediaPlayer();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-		try {
-			AssetFileDescriptor afd0 = mResources.openRawResourceFd(R.raw.testvideo);
-			mMediaPlayer0.setDataSource(
-			        afd0.getFileDescriptor(), afd0.getStartOffset(), afd0.getLength());
-			afd0.close();
-            AssetFileDescriptor afd1 = mResources.openRawResourceFd(R.raw.big_buck_bunny);
-			mMediaPlayer1.setDataSource(
-			        afd1.getFileDescriptor(), afd1.getStartOffset(), afd1.getLength());
-			afd1.close();
-		} catch (Exception e) {
-			Log.e(TAG, e.getMessage(), e);
-		}
+        mResources = getResources();
+        MediaPlayer mpSource = new MediaPlayer();
+        MediaPlayer mpEffect = new MediaPlayer();
+        MediaPlayer mpAlpha = new MediaPlayer();
 
-		mVideoView = new VideoSurfaceView(this, mMediaPlayer1, mMediaPlayer0);
-		setContentView(mVideoView);
+        try {
+            AssetFileDescriptor afd0 = mResources.openRawResourceFd(R.raw.vid);
+            mpSource.setDataSource(
+                    afd0.getFileDescriptor(), afd0.getStartOffset(), afd0.getLength());
+            afd0.close();
+            AssetFileDescriptor afd1 = mResources.openRawResourceFd(R.raw.dragon);
+            mpEffect.setDataSource(
+                    afd1.getFileDescriptor(), afd1.getStartOffset(), afd1.getLength());
+            afd1.close();
+            AssetFileDescriptor afd2 = mResources.openRawResourceFd(R.raw.dragon_alpha);
+            mpAlpha.setDataSource(
+                    afd2.getFileDescriptor(), afd2.getStartOffset(), afd2.getLength());
+            afd2.close();
+        } catch (Exception e) {
+            Log.e(TAG, e.getMessage(), e);
+        }
 
-	}
+        mVideoView = new VideoSurfaceView(this, mpSource, mpEffect, mpAlpha);
+        setContentView(mVideoView);
 
-	@Override
-	protected void onResume() {
-		super.onResume();
-		mVideoView.onResume();
-	}
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mVideoView.onResume();
+    }
 }

@@ -25,6 +25,8 @@ public class VideoEncoder {
     private static final String H264_MIME = "video/avc";
     private static final String VPX_DECODER_NAME = "OMX.google.vpx.decoder";
     private static final String VPX_ENCODER_NAME = "OMX.google.vp8.encoder";
+    private static final String AVC_ENCODER_NAME = "OMX.google.h264.encoder";
+    private static final String HW_AVC_ENCODER_NAME = "OMX.qcom.video.encoder.avc";
     private static final String BASIC_IVF = "video_176x144_vp8_basic.ivf";
     private static final long DEFAULT_TIMEOUT_US = 50000;
     private Resources mResources;
@@ -68,8 +70,8 @@ public class VideoEncoder {
 //            format.setInteger(MediaFormat.KEY_FRAME_RATE, 30);
 //            Log.e("color test", "3");
 
-            MediaFormat mediaFormat = MediaFormat.createVideoFormat(mimeType, 640, 480);
-            mediaFormat.setInteger(MediaFormat.KEY_BIT_RATE, 768000);
+            MediaFormat mediaFormat = MediaFormat.createVideoFormat(mimeType, mFrameWidth, mFrameHeight);
+            mediaFormat.setInteger(MediaFormat.KEY_BIT_RATE, 1068000);
             mediaFormat.setInteger(MediaFormat.KEY_FRAME_RATE, 30);
 //            mediaFormat.setInteger(MediaFormat.KEY_COLOR_FORMAT, MediaCodecInfo.CodecCapabilities.COLOR_FormatYUV420Planar);
             int colorFormat = getColorFormat("video/avc");
@@ -80,7 +82,8 @@ public class VideoEncoder {
 //            mEncoder = MediaCodec.createByCodecName(VPX_ENCODER_NAME);
 //            mEncoder = MediaCodec.createEncoderByType("video/x-vnd.on2.vp8");
 //                mEncoder = MediaCodec.createEncoderByType(MP4_MIME);
-            mEncoder = MediaCodec.createEncoderByType(mimeType);
+//            mEncoder = MediaCodec.createEncoderByType(mimeType);
+            mEncoder = MediaCodec.createByCodecName(HW_AVC_ENCODER_NAME);
             Log.e("color test", "4");
 //                Log.e("color encoder name", "" + mEncoder.getName());
 //            mEncoder = MediaCodec.createByCodecName("OMX.qcom.video.encoder.mpeg4");
@@ -168,6 +171,7 @@ public class VideoEncoder {
             Log.e("encode end", "blocked");
             return;
         }
+        Log.e("encode", "size = " + size);
         boolean sawInputEOS = size < 0;
         boolean sawOutputEOS = false;
         try {

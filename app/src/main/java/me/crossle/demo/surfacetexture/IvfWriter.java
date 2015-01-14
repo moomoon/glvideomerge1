@@ -4,6 +4,8 @@ package me.crossle.demo.surfacetexture;
  * Created by leapin on 2015/1/13.
  */
 
+import android.util.Log;
+
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -79,6 +81,7 @@ public class IvfWriter {
     public void writeFrame(byte[] frame, long timeStamp) throws IOException {
         mOutputFile.write(makeIvfFrameHeader(frame.length, timeStamp));
         mOutputFile.write(frame);
+        Log.e("write frame", "length = " + frame.length + " timeStamp = " + timeStamp);
         mFrameCount++;
     }
 

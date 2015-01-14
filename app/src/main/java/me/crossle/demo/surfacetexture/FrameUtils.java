@@ -11,10 +11,8 @@ public class FrameUtils {
         int uvIndex = frameSize;
 
         int a, R, G, B, Y, U, V;
-        int index = 0;
-        int yStart = flipped ? height - 1 : 0;
-        int yEnd = flipped ? 0 : height - 1;
-        for (int j = yStart; j < yEnd; j++) {
+        int index = flipped ? frameSize - width : 0;
+        for (int j = 0; j < height; j++) {
             for (int i = 0; i < width; i++) {
 
 //                a = (argb[index] & 0xff000000) >> 24; // a is not used obviously
@@ -36,6 +34,11 @@ public class FrameUtils {
                     yuv420sp[uvIndex++] = (byte) ((U < 0) ? 0 : ((U > 255) ? 255 : U));
                 }
                 index++;
+                if (flipped && index % width == 0) {
+                    index -= width;
+                    index -= width;
+                }
+
             }
         }
     }
