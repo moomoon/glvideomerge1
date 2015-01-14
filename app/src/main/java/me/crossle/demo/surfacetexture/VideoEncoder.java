@@ -49,7 +49,7 @@ public class VideoEncoder {
         this.mOutputFilename = outputFilename;
         this.mFrameSize = mFrameWidth * mFrameHeight * 3 / 2;
 
-        String mimeType = MP4_MIME;
+        String mimeType = H264_MIME;
 
 //        for (int i = 1; i < 44; i++) {
 //            Log.e("color format", "trying " + i);
@@ -183,7 +183,6 @@ public class VideoEncoder {
                 int inputBufIndex = mEncoder.dequeueInputBuffer(DEFAULT_TIMEOUT_US);
                 if (inputBufIndex >= 0) {
                     mInputBuffers[inputBufIndex].clear();
-                    Log.e("bufferCount", "remain = " + mInputBuffers[inputBufIndex].remaining() + " frameLength = " + frame.length);
                     mInputBuffers[inputBufIndex].put(frame);
                     mInputBuffers[inputBufIndex].rewind();
                     int presentationTimeUs = (mFrameIndex * 1000000) / mFrameRate;
@@ -204,7 +203,7 @@ public class VideoEncoder {
                 int i = 0;
                 while (!sawOutputEOS) {
                     Log.e("encode end", "before dequeue");
-                    sawOutputEOS = dequeueOutput(true);
+                    sawOutputEOS |= dequeueOutput(true);
                     Log.e("encode end", "appending frame " + i++ + " sawOutputEOS = " + sawOutputEOS);
                 }
                 Log.e("encode end", "before encoder stop");

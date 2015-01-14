@@ -2,8 +2,6 @@ package me.crossle.demo.surfacetexture;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.SurfaceTexture;
 import android.media.MediaPlayer;
 import android.opengl.GLES20;
@@ -23,30 +21,28 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
-import java.nio.ShortBuffer;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
-import javax.microedition.khronos.opengles.GL11;
-
-import jcodec.api.SequenceEncoder;
 
 @SuppressLint("ViewConstructor")
 class VideoSurfaceView extends GLSurfaceView {
 
     VideoRender mRenderer;
-    private MediaPlayer mMediaPlayer0 = null;
-    private MediaPlayer mMediaPlayer1 = null;
+    private MediaPlayer mMPSource = null;
+    private MediaPlayer mMPEffect = null;
+    private MediaPlayer mMPAlpha = null;
     private int mHeight, mWidth;
     private float mOffsetX, mOffsetY;
 
 
-    public VideoSurfaceView(Context context, MediaPlayer mp0, MediaPlayer mp1) {
+    public VideoSurfaceView(Context context, MediaPlayer mpSource, MediaPlayer mpEffect, MediaPlayer mpAlpha) {
         super(context);
 
         setEGLContextClientVersion(2);
-        mMediaPlayer0 = mp0;
-        mMediaPlayer1 = mp1;
+        this.mMPSource = mpSource;
+        this.mMPEffect = mpEffect;
+        this.mMPAlpha = mpAlpha;
         mRenderer = new VideoRender(context);
         setRenderer(mRenderer);
         mDetector = new GestureDetector(context, new GestureDetector.OnGestureListener() {
@@ -111,7 +107,7 @@ class VideoSurfaceView extends GLSurfaceView {
     public void onResume() {
         queueEvent(new Runnable() {
             public void run() {
-                mRenderer.setMediaPlayer(mMediaPlayer0, mMediaPlayer1);
+                mRenderer.setMediaPlayer(mMPSource, mMPEffect, mMPAlpha);
             }
         });
 
@@ -149,63 +145,69 @@ class VideoSurfaceView extends GLSurfaceView {
 
         private final String mVertexShader =
                 "uniform mat4 uMVPMatrix;\n" +
-                        "uniform mat4 uSTMatrix0;\n" +
-                        "uniform mat4 uSTMatrix1;\n" +
+                        "uniform mat4 uSTMSource;\n" +
+                        "uniform mat4 uSTEffect;\n" +
                         "attribute vec4 aPosition;\n" +
                         "attribute vec4 aTextureCoord;\n" +
-                        "varying vec2 vTextureCoord0;\n" +
-                        "varying vec2 vTextureCoord1;\n" +
+                        "varying vec2 vTexCoSource;\n" +
+                        "varying vec2 vTexCoEffect;\n" +
                         "void main() {\n" +
                         "  gl_Position = uMVPMatrix * aPosition;\n" +
-                        "  vTextureCoord0 = (uSTMatrix0 * aTextureCoord).xy;\n" +
-                        "  vTextureCoord1 = (uSTMatrix1 * aTextureCoord).xy;\n" +
+                        "  vTexCoSource = (uSTSource * aTextureCoord).xy;\n" +
+                        "  vTexCoEffect = (uSTEffect * aTextureCoord).xy;\n" +
                         "}\n";
 
         private final String mFragmentShader =
                 "#extension GL_OES_EGL_image_external : require\n" +
                         "precision mediump float;\n" +
-                        "varying vec2 vTextureCoord0;\n" +
-                        "varying vec2 vTextureCoord1;\n" +
-                        "uniform samplerExternalOES sTexture0;\n" +
-                        "uniform samplerExternalOES sTexture1;\n" +
+                        "varying vec2 vTexCoSource;\n" +
+                        "varying vec2 vTexCoEffect;\n" +
+                        "uniform samplerExternalOES sTexSource;\n" +
+                        "uniform samplerExternalOES sTexEffect;\n" +
+                        "uniform samplerExternalOES sTexAlpha;\n" +
                         "void main() {\n" +
-                        "  vec4 tempColor0 =  texture2D(sTexture0, vTextureCoord0);\n" +
-                        "  vec4 tempColor1 =  texture2D(sTexture1, vTextureCoord1);\n" +
-//                        "  gl_FragColor = vec4(tempColor0.x + tempColor1.x, tempColor1.y, 0, 1);\n" +
-//                        "  gl_FragColor = tempColor0;\n" +
-                        "gl_FragColor = tempColor0 + tempColor1 * 0.5;\n" +
+                        "  vec4 cSource =  texture2D(sTexture0, vTexCoSource);\n" +
+                        "  vec4 cEffect =  texture2D(sTexture1, vTexCoEffect);\n" +
+                        "  vec4 cAlpha =  texture2D(sTexture1, vTexCoEffect);\n" +
+                        "  gl_FragColor = cSource * (vec4(1.0) - cAlpha) + cEffect * cAlpha;\n" +
                         "}\n";
-
         private float[] mMVPMatrix = new float[16];
-        private float[] mSTMatrix0 = new float[16];
-        private float[] mSTMatrix1 = new float[16];
+        private float[] mSTMSource = new float[16];
+        private float[] mSTMEffect = new float[16];
 
         private int mProgram;
         private int[] textures;
         private int muMVPMatrixHandle;
-        private int muSTMatrixHandle0;
-        private int muSTMatrixHandle1;
+        private int muSTMatrixHandleSource;
+        private int muSTMatrixHandleEffect;
         private int maPositionHandle;
         private int maTextureHandle;
 
-        private SurfaceTexture surface0;
-        private SurfaceTexture surface1;
-        private boolean updateSurface0 = false;
-        private boolean updateSurface1 = false;
+        private SurfaceTexture sTexSource;
+        private SurfaceTexture sTexEffect;
+        private SurfaceTexture sTexAlpha;
+        private boolean updateSource = false;
+        private boolean updateEffect = false;
+        private boolean updateAlpha = false;
 
         private static int GL_TEXTURE_EXTERNAL_OES = 0x8D65;
 
-        private MediaPlayer mediaPlayer0;
-        private MediaPlayer mediaPlayer1;
+        private MediaPlayer mpSource;
+        private MediaPlayer mpEffect;
+        private MediaPlayer mpAlpha;
 
         private float transX, transY, transZ;
 
         private IntBuffer fbTexture;
 //        private ByteBuffer fbTextureByte;
 
-        private int[] pixels = new int[640 * 480];
+        private final int recWidth = 640;
+        private final int recHeight = 480;
 
-        Bitmap cache;
+        private int[] pixels = new int[recWidth * recHeight];
+        private byte[] yuv = new byte[recWidth * recHeight * 3 / 2];
+
+//        Bitmap cache;
 
         public void setTranslate(float x, float y, float z) {
             this.transX = x;
@@ -219,66 +221,66 @@ class VideoSurfaceView extends GLSurfaceView {
                     .order(ByteOrder.nativeOrder()).asFloatBuffer();
             mTriangleVertices.put(mTriangleVerticesData).position(0);
 
-            Matrix.setIdentityM(mSTMatrix0, 0);
-            Matrix.setIdentityM(mSTMatrix1, 0);
+            Matrix.setIdentityM(mSTMSource, 0);
+            Matrix.setIdentityM(mSTMEffect, 0);
 
-            fbTexture = IntBuffer.allocate(640 * 480);
+            fbTexture = IntBuffer.allocate(recWidth * recHeight);
 //            fbTextureByte = ByteBuffer.allocate(640 * 480 * 4);
         }
 
-        public void setMediaPlayer(MediaPlayer player0, MediaPlayer player1) {
-            mediaPlayer0 = player0;
-            mediaPlayer1 = player1;
+        public void setMediaPlayer(MediaPlayer pSource, MediaPlayer pEffect, MediaPlayer pAlpha) {
+            mpSource = pSource;
+            mpEffect = pEffect;
+            mpAlpha = pAlpha;
         }
 
         @Override
         public void onDrawFrame(GL10 glUnused) {
             synchronized (this) {
-                if (updateSurface0) {
-                    surface0.updateTexImage();
-                    surface0.getTransformMatrix(mSTMatrix0);
-                    updateSurface0 = false;
+                if (updateSource) {
+                    sTexSource.updateTexImage();
+                    sTexSource.getTransformMatrix(mSTMSource);
+                    updateSource = false;
                 }
-                if (updateSurface1) {
-                    surface1.updateTexImage();
-                    surface1.getTransformMatrix(mSTMatrix1);
-                    updateSurface1 = false;
+                if (updateEffect) {
+                    sTexEffect.updateTexImage();
+                    sTexEffect.getTransformMatrix(mSTMEffect);
+                    updateEffect = false;
                 }
-            }
+                if (updateAlpha) {
+                    sTexAlpha.updateTexImage();
+                    updateAlpha = false;
+                }
+        }
 
-            GLES20.glUseProgram(mProgram);
+        GLES20.glUseProgram(mProgram);
+        checkGlError("glUseProgram");
 
-            GLES20.glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
-            GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT | GLES20.GL_COLOR_BUFFER_BIT);
-
-            GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
-            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[0]);
-
-            checkGlError("bind 0");
-//            int t1h = GLES20.glGetUniformLocation ( mProgram, "sTexture0" );
-//            //        GLES20.glUniform1i(t1h, textures[0]);
-//            GLES20.glUniform1i(t1h, 1);
-//            checkGlError("gluniform10");
+        GLES20.glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
+        GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT | GLES20.GL_COLOR_BUFFER_BIT);
 
 
-            GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
-            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[1]);
-            checkGlError("bind 1");
-//            int t2h = GLES20.glGetUniformLocation ( mProgram, "sTexture1" );
-//            //        GLES20.glUniform1i(t1h, textures[0]);
-//            GLES20.glUniform1i(t2h, 2);
-//            checkGlError("gluniform11");
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
+        GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[0]);
+        checkGlError("bind texture 0");
 
-            checkGlError("glUseProgram");
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
+        GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[1]);
+        checkGlError("bind textture 1");
 
-            mTriangleVertices.position(TRIANGLE_VERTICES_DATA_POS_OFFSET);
-            GLES20.glVertexAttribPointer(maPositionHandle, 3, GLES20.GL_FLOAT, false,
-                    TRIANGLE_VERTICES_DATA_STRIDE_BYTES, mTriangleVertices);
-            checkGlError("glVertexAttribPointer maPosition");
-            GLES20.glEnableVertexAttribArray(maPositionHandle);
-            checkGlError("glEnableVertexAttribArray maPositionHandle");
+        GLES20.glActiveTexture(GLES20.GL_TEXTURE2);
+        GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[2]);
+        checkGlError("bind textture 2");
 
-            mTriangleVertices.position(TRIANGLE_VERTICES_DATA_UV_OFFSET);
+
+        mTriangleVertices.position(TRIANGLE_VERTICES_DATA_POS_OFFSET);
+        GLES20.glVertexAttribPointer(maPositionHandle, 3, GLES20.GL_FLOAT, false,
+        TRIANGLE_VERTICES_DATA_STRIDE_BYTES, mTriangleVertices);
+        checkGlError("glVertexAttribPointer maPosition");
+        GLES20.glEnableVertexAttribArray(maPositionHandle);
+        checkGlError("glEnableVertexAttribArray maPositionHandle");
+
+        mTriangleVertices.position(TRIANGLE_VERTICES_DATA_UV_OFFSET);
             GLES20.glVertexAttribPointer(maTextureHandle, 3, GLES20.GL_FLOAT, false,
                     TRIANGLE_VERTICES_DATA_STRIDE_BYTES, mTriangleVertices);
             checkGlError("glVertexAttribPointer maTextureHandle");
@@ -288,49 +290,28 @@ class VideoSurfaceView extends GLSurfaceView {
             Matrix.setIdentityM(mMVPMatrix, 0);
             Matrix.translateM(mMVPMatrix, 0, transX, transY, transZ);
             GLES20.glUniformMatrix4fv(muMVPMatrixHandle, 1, false, mMVPMatrix, 0);
-            GLES20.glUniformMatrix4fv(muSTMatrixHandle0, 1, false, mSTMatrix0, 0);
-            GLES20.glUniformMatrix4fv(muSTMatrixHandle1, 1, false, mSTMatrix1, 0);
+            GLES20.glUniformMatrix4fv(muSTMatrixHandleSource, 1, false, mSTMSource, 0);
+            GLES20.glUniformMatrix4fv(muSTMatrixHandleEffect, 1, false, mSTMEffect, 0);
 
             GLES20.glDrawArrays(GLES20.GL_TRIANGLE_STRIP, 0, 4);
             checkGlError("glDrawArrays");
             fbTexture.position(0);
-//            fbTextureByte.position(0);
-            Log.e("readpixel", "log stub");
-            Log.e("readpixel " + ++count, "before read");
 //            GLES20.glReadPixels(0, 0, 500, 500, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, fbTexture);
-            GLES20.glReadPixels(0, 0, 640, 480, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, fbTexture);
+            GLES20.glReadPixels(0, 0, recWidth, recHeight, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, fbTexture);
 //            GLES20.glReadPixels(0, 0, 640, 480, GLES20.GL_RGBA, GLES20.GL_UNSIGNED_BYTE, fbTextureByte);
-            Log.e("readpixel " + count, "before get");
-            Log.e("readpixel " + count, "before get");
             fbTexture.position(0);
             fbTexture.get(pixels);
-//            byte[] yuv = new byte[640 * 480 * 3 / 2];
-//            FrameUtils.encodeYUV420SP(yuv, pixels, 640, 480);
-//            try {
-//                Log.e("readpixel " + count, "before create");
-//                encoder.encode(yuv, 0, 640 * 480);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-            encoderWrapper.feed(pixels);
-            Log.e("readpixel " + count, "end");
-//            cache = Bitmap.createBitmap(pixels, 500, 500, Bitmap.Config.ARGB_8888);
-//            cache.copyPixelsFromBuffer(fbTexture);
-//            try {
-//                androidEncoder.encodeImage(cache);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
+            FrameUtils.encodeYUV420SPFlipped(yuv, pixels, recWidth, recHeight);
+            try {
+                encoder.encode(yuv, 0, yuv.length);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             GLES20.glFinish();
 
         }
 
-        private VideoEncoder encoder = VideoEncoder.create(Environment.getExternalStorageDirectory() + File.separator + "videoEncoder.3gp", 640, 480, 30);
-
-        private AltEncoderWrapper encoderWrapper = new AltEncoderWrapper(640, 320, 30, 1000000, Environment.getExternalStorageDirectory() + File.separator + "altencoder.3gp");
-
-
-        int count = 0;
+        private VideoEncoder encoder = VideoEncoder.create(Environment.getExternalStorageDirectory() + File.separator + "encoded.h264", recWidth, recHeight, 30);
 
 
         @Override
@@ -338,25 +319,11 @@ class VideoSurfaceView extends GLSurfaceView {
 
         }
 
-//        private jcodec.api.android.SequenceEncoder androidEncoder;
-
         @Override
         public void onSurfaceCreated(GL10 glUnused, EGLConfig config) {
-            encoderWrapper.start();
             if (file.exists()) {
                 file.delete();
             }
-//            try {
-//                file.createNewFile();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            try {
-//                androidEncoder = new jcodec.api.android.SequenceEncoder(file);
-//            } catch (IOException e) {
-//                Log.e("encoder constructor", "construct");
-//                e.printStackTrace();
-//            }
             mProgram = createProgram(mVertexShader, mFragmentShader);
             if (mProgram == 0) {
                 return;
@@ -379,49 +346,45 @@ class VideoSurfaceView extends GLSurfaceView {
                 throw new RuntimeException("Could not get attrib location for uMVPMatrix");
             }
 
-            muSTMatrixHandle0 = GLES20.glGetUniformLocation(mProgram, "uSTMatrix0");
+            muSTMatrixHandleSource = GLES20.glGetUniformLocation(mProgram, "uSTMSource");
             checkGlError("glGetUniformLocation uSTMatrix");
-            if (muSTMatrixHandle0 == -1) {
-                throw new RuntimeException("Could not get attrib location for uSTMatrix");
+            if (muSTMatrixHandleSource == -1) {
+                throw new RuntimeException("Could not get attrib location for uSTMSource");
             }
-            muSTMatrixHandle1 = GLES20.glGetUniformLocation(mProgram, "uSTMatrix1");
+            muSTMatrixHandleEffect = GLES20.glGetUniformLocation(mProgram, "uSTMEffect");
             checkGlError("glGetUniformLocation uSTMatrix");
-            if (muSTMatrixHandle1 == -1) {
-                throw new RuntimeException("Could not get attrib location for uSTMatrix");
+            if (muSTMatrixHandleEffect == -1) {
+                throw new RuntimeException("Could not get attrib location for uSTMEffect");
             }
 
-            textures = new int[2];
-            GLES20.glGenTextures(2, textures, 0);
+            textures = new int[3];
+            GLES20.glGenTextures(3, textures, 0);
 
 
-            int t0h = GLES20.glGetUniformLocation(mProgram, "sTexture0");
-            Log.e("t0h", "= " + t0h);
-            GLES20.glUniform1i(t0h, 0);
-
+            GLES20.glUniform1i(GLES20.glGetUniformLocation(mProgram, "sTexSource"), 0);
             GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
             GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[0]);
-//            int t0h = GLES20.glGetUniformLocation ( mProgram, "sTexture0" );
-//            //        GLES20.glUniform1i(t1h, textures[0]);
-//            GLES20.glUniform1i(t0h, 0);
-
-
-//            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[0]);
-            checkGlError("glBindTexture mTextureID");
-
+            checkGlError("glBindTexture sTexSource");
             GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
                     GLES20.GL_NEAREST);
             GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
                     GLES20.GL_LINEAR);
 
 
-            int t1h = GLES20.glGetUniformLocation(mProgram, "sTexture1");
-            Log.e("t1h", "= " + t1h);
-            GLES20.glUniform1i(t1h, 1);
+            GLES20.glUniform1i(GLES20.glGetUniformLocation(mProgram, "sTexEffect"), 1);
             GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
             GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[1]);
+            checkGlError("glBindTexture sTexEffect");
+            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
+                    GLES20.GL_NEAREST);
+            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
+                    GLES20.GL_LINEAR);
 
-            checkGlError("glBindTexture mTextureID");
 
+            GLES20.glUniform1i(GLES20.glGetUniformLocation(mProgram, "sTexAlpha"), 2);
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE2);
+            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[2]);
+            checkGlError("glBindTexture sTexAlpha");
             GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
                     GLES20.GL_NEAREST);
             GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
@@ -431,58 +394,71 @@ class VideoSurfaceView extends GLSurfaceView {
              * Create the SurfaceTexture that will feed this textureID,
              * and pass it to the MediaPlayer
              */
-            surface0 = new SurfaceTexture(textures[0]);
-            surface0.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
+            sTexSource = new SurfaceTexture(textures[0]);
+            sTexSource.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
                 @Override
                 public void onFrameAvailable(SurfaceTexture surfaceTexture) {
 
-                    updateSurface0 = true;
+                    updateSource = true;
                 }
             });
-            surface1 = new SurfaceTexture(textures[1]);
-            surface1.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
+            sTexEffect = new SurfaceTexture(textures[1]);
+            sTexEffect.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
                 @Override
                 public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                    updateSurface1 = true;
+                    updateEffect = true;
+                }
+            });
+            sTexAlpha = new SurfaceTexture(textures[2]);
+            sTexAlpha.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
+                @Override
+                public void onFrameAvailable(SurfaceTexture surfaceTexture) {
+                    updateAlpha = true;
                 }
             });
 
 
-            Surface surface = new Surface(surface0);
-            mediaPlayer0.setSurface(surface);
-            mediaPlayer0.setScreenOnWhilePlaying(true);
+            Surface surface = new Surface(sTexSource);
+            mpSource.setSurface(surface);
+            mpSource.setScreenOnWhilePlaying(true);
             surface.release();
-            surface = new Surface(surface1);
-            mediaPlayer1.setSurface(surface);
-            mediaPlayer1.setScreenOnWhilePlaying(true);
+            surface = new Surface(sTexEffect);
+            mpEffect.setSurface(surface);
+            mpEffect.setScreenOnWhilePlaying(true);
+            surface.release();
+            surface = new Surface(sTexAlpha);
+            mpEffect.setSurface(surface);
+            mpEffect.setScreenOnWhilePlaying(true);
             surface.release();
 
             try {
-                mediaPlayer0.prepare();
-                mediaPlayer1.prepare();
-            } catch (IOException t) {
+                mpSource.prepare();
+                mpEffect.prepare();
+                mpAlpha.prepare();
+            } catch (IOException e) {
                 Log.e(TAG, "media player prepare failed");
+                e.printStackTrace();
             }
 
             synchronized (this) {
-                updateSurface0 = false;
-                updateSurface1 = false;
+                updateSource = false;
+                updateEffect = false;
+                updateAlpha = false;
             }
 
-            mediaPlayer0.start();
-            mediaPlayer1.start();
+            mpSource.start();
+            mpEffect.start();
+            mpAlpha.start();
 
             new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                 @Override
                 public void run() {
-//                    try {
-//                        androidEncoder.finish();
-                    Log.e("encode end", "send eos");
-//                        encoder.encode(null, 0, -1);
-                    encoderWrapper.stop();
-//                    } catch (IOException e) {
-//                        e.printStackTrace();
-//                    }
+                    try {
+                        Log.e("encode end", "send eos");
+                        encoder.encode(null, 0, -1);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }, 20000);
         }
