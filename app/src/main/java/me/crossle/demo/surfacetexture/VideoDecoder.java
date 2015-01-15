@@ -19,11 +19,12 @@ public class VideoDecoder {
     private Surface surface;
     private int mFrameIndex;
 
-    ByteBuffer[] inputBuffers = decoder.getInputBuffers();
-    ByteBuffer[] outputBuffers = decoder.getOutputBuffers();
+    ByteBuffer[] inputBuffers;
+    ByteBuffer[] outputBuffers;
     MediaCodec.BufferInfo info = new MediaCodec.BufferInfo();
     boolean isEOS = false;
     long startMs;
+
 
     public VideoDecoder(Surface surface, String filePath) {
         this.surface = surface;
@@ -54,7 +55,13 @@ public class VideoDecoder {
             return;
         }
 
+
+    }
+
+    public void start() {
         decoder.start();
+        inputBuffers = decoder.getInputBuffers();
+        outputBuffers = decoder.getOutputBuffers();
         startMs = System.currentTimeMillis();
     }
 

@@ -5,7 +5,10 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
+
+import java.io.File;
 
 public class MediaPlayerSurfaceStubActivity extends Activity {
 
@@ -26,19 +29,13 @@ public class MediaPlayerSurfaceStubActivity extends Activity {
         MediaPlayer mpAlpha = new MediaPlayer();
 
         try {
-            AssetFileDescriptor afd0 = mResources.openRawResourceFd(R.raw.vid);
+            AssetFileDescriptor afd0 = mResources.openRawResourceFd(R.raw.big_buck_bunny);
             mpSource.setDataSource(
                     afd0.getFileDescriptor(), afd0.getStartOffset(), afd0.getLength());
             afd0.close();
-            AssetFileDescriptor afd1 = mResources.openRawResourceFd(R.raw.pocoyo);
-//            mpEffect.setDataSource(
-//                    afd1.getFileDescriptor(), afd1.getStartOffset(), afd1.getLength());
-//            afd1.close();
-            AssetFileDescriptor afd2 = mResources.openRawResourceFd(R.raw.pocoyo_alpha);
-//            mpAlpha.setDataSource(
-//                    afd2.getFileDescriptor(), afd2.getStartOffset(), afd2.getLength());
-//            afd2.close();
-            mVideoView = new VideoSurfaceView(this, mpSource, adf1, adf2);
+
+            String dir = Environment.getExternalStorageDirectory() + File.separator;
+            mVideoView = new VideoSurfaceView(this, mpSource, dir + "pocoyo.mp4", dir + "pocoyo_alpha.mp4");
             setContentView(mVideoView);
         } catch (Exception e) {
             Log.e(TAG, e.getMessage(), e);
