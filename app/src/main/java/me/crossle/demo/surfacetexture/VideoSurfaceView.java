@@ -21,6 +21,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -171,21 +172,21 @@ class VideoSurfaceView extends GLSurfaceView {
                         "  vec4 cEffect =  texture2D(sTexEffect, vTexCoEffect);\n" +
                         "  vec4 cAlpha =  texture2D(sTexAlpha, vTexCoEffect);\n" +
                         "  float pos = vTexCoSource.x + vTexCoSource.y;\n" +
-                        "  if(pos < 0.6) {\n" +
-                        "     gl_FragColor = cSource;\n" +
-                        "  } else if(pos < 1.3) {\n" +
-                        "     gl_FragColor = cEffect;\n" +
-                        "  } else {\n" +
-                        "     gl_FragColor = cAlpha;\n" +
-                        "  }\n" +
-                        "}\n";
+//                        "  if(pos < 0.6) {\n" +
+//                        "     gl_FragColor = cSource;\n" +
+//                        "  } else if(pos < 1.3) {\n" +
+//                        "     gl_FragColor = cEffect;\n" +
+//                        "  } else {\n" +
+//                        "     gl_FragColor = cAlpha;\n" +
+//                        "  }\n" +
+//                        "}\n";
 //                        "  gl_FragColor = cAlpha;\n" +
-//                        "  gl_FragColor = cSource * (vec4(1.0) - cAlpha) + cEffect * cAlpha;\n" +
+                        "  gl_FragColor = cSource * (vec4(1.0) - cAlpha) + cEffect * cAlpha;\n" +
 //                        "  gl_FragColor = cSource;\n" +
 //                        "  gl_FragColor = cSource * cAlpha;\n" +
 //                        "  gl_FragColor = cAlpha * vec4(1.0);\n" +
 
-        //                        "}\n";
+                        "}\n";
         private float[] mMVPMatrix = new float[16];
         private float[] mSTMSource = new float[16];
         private float[] mSTMEffect = new float[16];
@@ -197,6 +198,9 @@ class VideoSurfaceView extends GLSurfaceView {
         private int muSTMatrixHandleEffect;
         private int maPositionHandle;
         private int maTextureHandle;
+        private int usTexSourceHandle;
+        private int usTexEffectHandle;
+        private int usTexAlphaHandle;
 
         private SurfaceTexture sTexSource;
         private SurfaceTexture sTexEffect;
@@ -224,6 +228,7 @@ class VideoSurfaceView extends GLSurfaceView {
 
 //        Bitmap cache;
 
+
         public void setTranslate(float x, float y, float z) {
             this.transX = x;
             this.transY = y;
@@ -249,6 +254,13 @@ class VideoSurfaceView extends GLSurfaceView {
             mpAlpha = pAlpha;
         }
 
+
+        boolean effectPaused = false;
+        boolean alphaPaused = false;
+        int effectPosition = 0;
+        int alphaPosition = 0;
+        final int diffTolerance = 10;
+
         @Override
         public void onDrawFrame(GL10 glUnused) {
             synchronized (this) {
@@ -257,16 +269,63 @@ class VideoSurfaceView extends GLSurfaceView {
                     sTexSource.getTransformMatrix(mSTMSource);
                     updateSource = false;
                 }
-                if (updateEffect) {
+                if (updateEffect && updateAlpha) {
                     sTexEffect.updateTexImage();
+                    sTexAlpha.updateTexImage();
                     sTexEffect.getTransformMatrix(mSTMEffect);
                     updateEffect = false;
-                }
-                if (updateAlpha) {
-                    sTexAlpha.updateTexImage();
                     updateAlpha = false;
                 }
+//                int sourcePosition = mpSource.getCurrentPosition();
+                effectPosition = mpEffect.getCurrentPosition();
+                alphaPosition = mpAlpha.getCurrentPosition();
+//                if (effectPosition > alphaPosition) {
+//                    try {
+//                        synchronized (mpEffect) {
+//                            mpEffect.wait(effectPosition - alphaPosition);
+//                        }
+//                    } catch (InterruptedException e) {
+//                        Log.e("position check", "interrupted  mpEffect");
+//                        e.printStackTrace();
+//                    }
+//                } else if (effectPosition < alphaPosition) {
+//                    try {
+//                        synchronized (mpAlpha) {
+//                            mpAlpha.wait(alphaPosition - effectPosition);
+//                        }
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                        Log.e("position check", "interrupted  mpAlpha");
+//                    }
+//                }
+                if (effectPaused) {
+                    if (alphaPosition >= effectPosition) {
+                        mpEffect.start();
+                        effectPaused = false;
+                        Log.e("position check", "resumed effect");
+                    }
+                } else if (alphaPaused) {
+                    if (effectPosition >= alphaPosition) {
+                        mpAlpha.start();
+
+                        alphaPaused = false;
+                        Log.e("position check", "resumed alpha");
+                    }
+                } else if (effectPosition - alphaPosition > diffTolerance) {
+                    mpEffect.pause();
+                    effectPaused = true;
+                    Log.e("position check", "paused effect");
+                } else if (alphaPosition - effectPosition > diffTolerance) {
+                    mpAlpha.pause();
+                    alphaPaused = true;
+                    Log.e("position check", "paused alpha");
+                }
+
+//                int diff = effectPosition - alphaPosition;
+
+                Log.e("position check", "e = " + effectPosition + " a = " + alphaPosition + " diff = " + (effectPosition - alphaPosition));
             }
+
 
             GLES20.glUseProgram(mProgram);
             checkGlError("glUseProgram");
@@ -275,17 +334,46 @@ class VideoSurfaceView extends GLSurfaceView {
             GLES20.glClear(GLES20.GL_DEPTH_BUFFER_BIT | GLES20.GL_COLOR_BUFFER_BIT);
 
 
+            GLES20.glUniform1i(usTexSourceHandle, 0);
             GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
             GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[0]);
-            checkGlError("bind texture 0");
+            checkGlError("glBindTexture sTexSource");
+            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
+                    GLES20.GL_NEAREST);
+            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
+                    GLES20.GL_LINEAR);
 
-            GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
+
+            GLES20.glUniform1i(usTexEffectHandle, 5);
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE5);
             GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[1]);
-            checkGlError("bind textture 1");
+            checkGlError("glBindTexture sTexSource");
+            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
+                    GLES20.GL_NEAREST);
+            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
+                    GLES20.GL_LINEAR);
 
-            GLES20.glActiveTexture(GLES20.GL_TEXTURE2);
+
+            GLES20.glUniform1i(usTexAlphaHandle, 10);
+            GLES20.glActiveTexture(GLES20.GL_TEXTURE10);
             GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[2]);
-            checkGlError("bind textture 2");
+            checkGlError("glBindTexture sTexSource");
+            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
+                    GLES20.GL_NEAREST);
+            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
+                    GLES20.GL_LINEAR);
+
+//            GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
+//            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[0]);
+//            checkGlError("bind texture 0");
+//
+//            GLES20.glActiveTexture(GLES20.GL_TEXTURE5);
+//            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[1]);
+//            checkGlError("bind textture 1");
+//
+//            GLES20.glActiveTexture(GLES20.GL_TEXTURE10);
+//            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[2]);
+//            checkGlError("bind textture 2");
 
 
             mTriangleVertices.position(TRIANGLE_VERTICES_DATA_POS_OFFSET);
@@ -350,7 +438,7 @@ class VideoSurfaceView extends GLSurfaceView {
             if (mProgram == 0) {
                 return;
             }
-            GLES20.glUseProgram(mProgram);
+//            GLES20.glUseProgram(mProgram);
             maPositionHandle = GLES20.glGetAttribLocation(mProgram, "aPosition");
             checkGlError("glGetAttribLocation aPosition");
             if (maPositionHandle == -1) {
@@ -383,34 +471,37 @@ class VideoSurfaceView extends GLSurfaceView {
             GLES20.glGenTextures(3, textures, 0);
 
 
-            GLES20.glUniform1i(GLES20.glGetUniformLocation(mProgram, "sTexSource"), 0);
-            GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
-            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[0]);
-            checkGlError("glBindTexture sTexSource");
-            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
-                    GLES20.GL_NEAREST);
-            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
-                    GLES20.GL_LINEAR);
-
-
-            GLES20.glUniform1i(GLES20.glGetUniformLocation(mProgram, "sTexEffect"), 1);
-            GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
-            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[1]);
-            checkGlError("glBindTexture sTexEffect");
-            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
-                    GLES20.GL_NEAREST);
-            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
-                    GLES20.GL_LINEAR);
-
-
-            GLES20.glUniform1i(GLES20.glGetUniformLocation(mProgram, "sTexAlpha"), 2);
-            GLES20.glActiveTexture(GLES20.GL_TEXTURE2);
-            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[2]);
-            checkGlError("glBindTexture sTexAlpha");
-            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
-                    GLES20.GL_NEAREST);
-            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
-                    GLES20.GL_LINEAR);
+            usTexSourceHandle = GLES20.glGetUniformLocation(mProgram, "sTexSource");
+            usTexEffectHandle = GLES20.glGetUniformLocation(mProgram, "sTexEffect");
+            usTexAlphaHandle = GLES20.glGetUniformLocation(mProgram, "sTexAlpha");
+//            GLES20.glUniform1i(, 0);
+//            GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
+//            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[0]);
+//            checkGlError("glBindTexture sTexSource");
+//            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
+//                    GLES20.GL_NEAREST);
+//            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
+//                    GLES20.GL_LINEAR);
+//
+//
+//            GLES20.glUniform1i(GLES20.glGetUniformLocation(mProgram, "sTexEffect"), 5);
+//            GLES20.glActiveTexture(GLES20.GL_TEXTURE1);
+//            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[1]);
+//            checkGlError("glBindTexture sTexEffect");
+//            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
+//                    GLES20.GL_NEAREST);
+//            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
+//                    GLES20.GL_LINEAR);
+//
+//
+//            GLES20.glUniform1i(GLES20.glGetUniformLocation(mProgram, "sTexAlpha"), 10);
+//            GLES20.glActiveTexture(GLES20.GL_TEXTURE2);
+//            GLES20.glBindTexture(GL_TEXTURE_EXTERNAL_OES, textures[2]);
+//            checkGlError("glBindTexture sTexAlpha");
+//            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MIN_FILTER,
+//                    GLES20.GL_NEAREST);
+//            GLES20.glTexParameterf(GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_MAG_FILTER,
+//                    GLES20.GL_LINEAR);
 
             /*
              * Create the SurfaceTexture that will feed this textureID,
@@ -420,22 +511,27 @@ class VideoSurfaceView extends GLSurfaceView {
             sTexSource.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
                 @Override
                 public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-
-                    updateSource = true;
+                    synchronized (VideoRender.this) {
+                        updateSource = true;
+                    }
                 }
             });
             sTexEffect = new SurfaceTexture(textures[1]);
             sTexEffect.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
                 @Override
                 public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                    updateEffect = true;
+                    synchronized (VideoRender.this) {
+                        updateEffect = true;
+                    }
                 }
             });
             sTexAlpha = new SurfaceTexture(textures[2]);
             sTexAlpha.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
                 @Override
                 public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                    updateAlpha = true;
+                    synchronized (VideoRender.this) {
+                        updateAlpha = true;
+                    }
                 }
             });
 
@@ -466,11 +562,11 @@ class VideoSurfaceView extends GLSurfaceView {
                 updateSource = false;
                 updateEffect = false;
                 updateAlpha = false;
+                mpSource.start();
+                mpEffect.start();
+                mpAlpha.start();
             }
 
-            mpSource.start();
-            mpEffect.start();
-            mpAlpha.start();
             if (ENCODING) {
                 new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override

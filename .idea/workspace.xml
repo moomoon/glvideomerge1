@@ -18,676 +18,18 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="position check" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: me.crossle.demo.surfacetexture" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca0eab34-f5ed-474e-bea9-b38473e2e6e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/raw/dragon.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/raw/dragon_alpha.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/raw/vid.mp4" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\.idea\libraries\support_v4_19_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\generated\source\buildConfig\debug\com\android\grafika\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\generated\source\r\debug\com\android\grafika\R.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\R.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\drawable-hdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\drawable-mdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\drawable-xxhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\drawable\back.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout-land\activity_double_decode.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\about_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_camera_capture.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_chor_test.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_codec_open.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_color_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_continuous_capture.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_double_decode.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_gles_info.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_hardware_scaler.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_multi_surface_test.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_play_movie.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_play_movie_surface.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_read_pixels.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_record_fbo.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_scheduled_swap.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_soft_input_surface.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_texture_from_camera.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_texture_upload.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_texture_view_canvas.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\activity_texture_view_gl.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\layout\work_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\menu\main.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\values-sw720dp-land-v13\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\values-v11\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\values-v14\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\bundles\debug\res\values\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\AboutBox.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\AspectFrameLayout.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CameraCaptureActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CameraCaptureActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CameraCaptureActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CameraCaptureActivity$4.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CameraCaptureActivity$CameraHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CameraCaptureActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CameraSurfaceRenderer.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CameraUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ChorTestActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ChorTestActivity$ChorRenderThread$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ChorTestActivity$ChorRenderThread.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ChorTestActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CircularEncoder$Callback.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CircularEncoder$EncoderThread$EncoderHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CircularEncoder$EncoderThread.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CircularEncoder.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CircularEncoderBuffer.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CodecOpenActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\CodecOpenActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ColorBarActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\Content.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ContentManager$GenerateTask$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ContentManager$GenerateTask.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ContentManager$ProgressUpdater.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ContentManager.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ContinuousCaptureActivity$MainHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\ContinuousCaptureActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\DoubleDecodeActivity$PlayMovieThread.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\DoubleDecodeActivity$VideoBlob.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\DoubleDecodeActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\GeneratedMovie.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\GlesInfoActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\MoviePlayer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\MoviePlayer$FrameCallback.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\MoviePlayer$PlayTask$LocalHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\MoviePlayer$PlayTask.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\MoviePlayer$PlayerFeedback.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\MoviePlayer.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\SpeedControlCallback.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\TextureMovieEncoder$EncoderConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\TextureMovieEncoder$EncoderHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\TextureMovieEncoder.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\VideoEncoderCore.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\Drawable2d$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\Drawable2d$Prefab.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\Drawable2d.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\EglCore.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\EglSurfaceBase.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\FullFrameRect.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\Texture2dProgram$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\Texture2dProgram$ProgramType.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\Texture2dProgram.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\classes\debug\com\android\grafika\gles\WindowSurface.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\incremental\aidl\debug\dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\incremental\aidl\test\debug\dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\incremental\mergeAssets\debug\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\build\intermediates\incremental\packageResources\debug\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\grafika.iml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\AboutBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\AspectFrameLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\CameraCaptureActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\CameraUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\ChorTestActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\CircularEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\CircularEncoderBuffer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\CodecOpenActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\ColorBarActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\Content.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\ContentManager.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\ContinuousCaptureActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\DoubleDecodeActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\GeneratedMovie.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\GlesInfoActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\HardwareScalerActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\LiveCameraActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\MiscUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\MovieEightRects.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\MoviePlayer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\MovieSliders.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\MultiSurfaceActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\PlayMovieActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\PlayMovieSurfaceActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\ReadPixelsActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\RecordFBOActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\ScaledDrawable2d.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\ScheduledSwapActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\SoftInputSurfaceActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\SpeedControlCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\TextureFromCameraActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\TextureMovieEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\TextureMovieEncoder2.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\TextureUploadActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\TextureViewCanvasActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\TextureViewGLActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\VideoEncoderCore.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\WorkDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\Drawable2d.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\EglCore.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\EglSurfaceBase.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\FlatShadedProgram.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\FullFrameRect.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\GeneratedTexture.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\GlUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\OffscreenSurface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\Sprite2d.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\Texture2dProgram.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\java\com\android\grafika\gles\WindowSurface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\drawable\back.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout-land\activity_double_decode.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\about_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_camera_capture.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_chor_test.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_codec_open.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_color_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_continuous_capture.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_double_decode.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_gles_info.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_hardware_scaler.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_multi_surface_test.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_play_movie.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_play_movie_surface.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_read_pixels.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_record_fbo.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_scheduled_swap.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_soft_input_surface.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_texture_from_camera.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_texture_upload.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_texture_view_canvas.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\activity_texture_view_gl.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\layout\work_dialog.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\menu\main.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\grafika\src\main\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\jcodec.iml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\algo\BiliearStreamInterpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\algo\BilinearInterpolator2D.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\algo\CubicSplineStreamInterpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\algo\DataConvert.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\algo\Interpolator2D.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\algo\SoundFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\algo\StreamGauss.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\algo\StreamInterpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\FrameGrab.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\JCodecException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\SequenceEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\UnsupportedFormatException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\android\FrameGrab.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\android\SequenceEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\android\SequenceMuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\specific\AVCMP4Adaptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\specific\ContainerAdaptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\api\specific\GenericAdaptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\AACConts.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\AACUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\BlockReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\BlockType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\BlockWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\ChannelPosition.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\ObjectType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\Profile.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\AACTab.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\Block.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\BlockCCE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\BlockCPE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\BlockDSE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\BlockFil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\BlockICS.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\BlockPCE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\aac\blocks\RawDataBlockType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\BitIO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\Context.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\MConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\MDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\MEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\MQConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\MQDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\MQEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\TreeBinarizer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\common\biari\VPxBooleanEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\H264Const.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\H264Decoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\H264Encoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\H264Utils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\MappedH264ES.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\POCManager.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\BlockInterpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\CABACContst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\CAVLCReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\ChromaPredictionBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\CoeffTransformer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\Interpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\Intra16x16PredictionBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\Intra4x4PredictionBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\Intra8x8PredictionBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\Prediction.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\SliceDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\SliceHeaderReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\aso\FlatMBlockMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\aso\MBToSliceGroupMap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\aso\MapManager.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\aso\Mapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\aso\PrebuiltMBlockMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\aso\SliceGroupMapBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\decode\deblock\DeblockingFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\encode\ConstantRateControl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\encode\DumbRateControl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\encode\RateControl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\CABAC.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\CAVLC.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\AspectRatio.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\Frame.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\HRDParameters.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\MBType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\NALUnit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\NALUnitType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\PictureParameterSet.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\PredictionWeightTable.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\RefPicMarking.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\RefPicMarkingIDR.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\SEI.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\ScalingList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\ScalingMatrix.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\SeqParameterSet.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\SeqParameterSetExt.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\SliceHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\SliceType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\model\VUIParameters.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\write\CAVLCWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\write\NALUnitWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\io\write\SliceHeaderWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\h264\mp4\AvcCBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mjpeg\FrameHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mjpeg\JPEGBitStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mjpeg\JpegConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mjpeg\JpegDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mjpeg\JpegToThumb2x2.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mjpeg\JpegToThumb4x4.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mjpeg\ScanHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mjpeg\tools\Asserts.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\MPEGConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\MPEGDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\MPEGES.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\MPEGEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\MPEGPred.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\MPEGUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\SegmentReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\CopyrightExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\GOPHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\PictureCodingExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\PictureDisplayExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\PictureHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\PictureSpatialScalableExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\PictureTemporalScalableExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\QuantMatrixExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\SequenceDisplayExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\SequenceExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\SequenceHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg12\bitstream\SequenceScalableExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg4\es\DecoderConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg4\es\DecoderSpecific.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg4\es\Descriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg4\es\DescriptorFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg4\es\ES.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg4\es\NodeDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg4\es\SL.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\mpeg4\mp4\EsdsBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\ppm\PPMEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\Codebook.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\DCT2Prores.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\Mpeg2Prores.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\ProresConsts.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\ProresDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\ProresEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\ProresFix.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\ProresToProxy.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\ProresToThumb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\ProresToThumb2x2.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\prores\ProresToThumb4x4.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\raw\V210Decoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\raw\V210Encoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\s302\S302MDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\s302\S302MUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vp8\BooleanArithmeticDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vp8\FilterUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vp8\Macroblock.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vp8\VP8DCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vp8\VP8Decoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vp8\VP8Util.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vpx\VP8Encoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vpx\VPXBitstream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vpx\VPXConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vpx\VPXDCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\vpx\VPXQuantizer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\wav\ReaderLE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\wav\StringReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\wav\WavHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\wav\WavInput.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\wav\WavOutput.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\wav\WriterLE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\codecs\y4m\Y4MDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\AndroidUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\ArrayUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\Assert.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\AudioDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\AudioFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\AudioUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\AutoFileChannelWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\ByteArrayList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\ByteBufferSeekableByteChannel.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\Codec.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\CountingInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\DemuxerTrackMeta.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\FileChannelWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\IOUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\IntArrayList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\IntIntMap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\IntObjectMap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\JCodecUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\LongArrayList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\NIOUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\PriorityCallable.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\PriorityFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\ProxyInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\SeekableByteChannel.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\SeekableDemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\StringUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\VideoDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\VideoEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\DCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\DCTRef.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\FfmpegIntDct.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\IDCT2x2.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\IDCT4x4.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\IntDCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\SimpleIDCT10Bit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\SlowDCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\dct\SparseIDCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\io\AutoPool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\io\AutoResource.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\io\BitReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\io\BitWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\io\DummyBitstreamReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\io\VLC.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\io\VLCBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\AudioBuffer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\AudioFrame.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\ChannelLabel.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\ColorSpace.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Frame.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Packet.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Picture.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Picture8Bit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Plane.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Point.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Rational.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\RationalLarge.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Rect.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Size.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\TapeTimecode.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\model\Unit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\tools\Debug.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\tools\ImageOP.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\tools\MD5.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\tools\MathUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\tools\ToJSON.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\tools\WavMerge.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\common\tools\WavSplit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\CuesIndexer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\EBMLException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\MKVDemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\MKVMuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\MKVRemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\Reader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\SeekHeadIndexer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\SimpleEBMLParser.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\Type.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\ebml\BinaryElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\ebml\DateElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\ebml\Element.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\ebml\FloatElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\ebml\MasterElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\ebml\SignedIntegerElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\ebml\StringElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\ebml\UnsignedIntegerElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Attachments.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Block.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\BlockElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\BlockGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Chapters.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Cluster.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\CuePoint.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\CueTrackPosition.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\EBML.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Frame.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Info.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\MatroskaBlock.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\MatroskaCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Seek.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\SeekHead.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\SimpleTag.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\TagEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Tags.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Track.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\TrackEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\TrackEntryElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\elements\Tracks.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\util\ArrayCopy.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mkv\util\TLinkedList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\Brand.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\Chunk.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\ChunkReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\ChunkWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\MP4DemuxerException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\MP4Packet.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\MP4Util.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\QTTimeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\TimeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\TrackType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\AVC1Box.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\AliasBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\AudioSampleEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\Box.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\BoxFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\ChannelBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\ChunkOffsets64Box.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\ChunkOffsetsBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\CleanApertureExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\ClearApertureBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\ClipRegionBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\ColorExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\CompositionOffsetsBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\DataInfoBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\DataRefBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\Edit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\EditListBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\EncodedPixelBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\EndianBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\FielExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\FileTypeBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\FormatBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\FullBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\GamaExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\GenericMediaInfoBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\HandlerBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\Header.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\LeafBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\LoadSettingsBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\MP4ABox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\MediaBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\MediaHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\MediaInfoBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\MovieBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\MovieHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\NameBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\NodeBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\PixelAspectExt.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\ProductionApertureBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\SampleDescriptionBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\SampleEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\SampleSizesBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\SampleToChunkBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\SoundMediaHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\SyncSamplesBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\TimeToSampleBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\TimecodeMediaInfoBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\TimecodeSampleEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\TrackHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\TrakBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\UrlBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\VideoMediaHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\VideoSampleEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\WaveExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\channel\ChannelLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\channel\ChannelUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\boxes\channel\Label.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\demuxer\AbstractMP4DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\demuxer\FramesMP4DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\demuxer\MP4Demuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\demuxer\PCMMP4DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\demuxer\TimecodeMP4DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\muxer\AbstractMP4MuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\muxer\FramesMP4MuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\muxer\MP4Muxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\muxer\PCMMP4MuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mp4\muxer\TimecodeMP4MuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mps\MPSDemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mps\MTSDemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\MXFConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\MXFDemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\AES3PCMDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\BER.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\CDCIEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\ContentStorage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\DeltaEntries.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\EssenceContainerData.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\FileDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\GenericDataEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\GenericDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\GenericPackage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\GenericPictureEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\GenericSoundEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\GenericTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\Identification.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\IndexEntries.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\IndexSegment.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\J2KPictureDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\KLV.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\MPEG2VideoDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\MXFInterchangeObject.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\MXFMetadata.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\MXFPartition.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\MXFPartitionPack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\MXFStructuralComponent.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\MXFUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\MaterialPackage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\Preface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\RGBAEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\Sequence.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\SourceClip.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\SourcePackage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\TimecodeComponent.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\TimelineTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\UL.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\model\WaveAudioDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\containers\mxf\streaming\MXFVirtualTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\filters\color\CVTColorFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\ChangeTimescale.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\Cut.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\Flattern.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\InplaceEdit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\MovDump.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\Paste.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\QTEdit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\QTRefEdit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\ReExport.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\Remux.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\SetPAR.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\Strip.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\Undo.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\Util.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\WebOptimize.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\ConcurrentMovieRangeService.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\MovieHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\MovieRange.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\MovieSegment.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\VirtualMovie.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\VirtualPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\VirtualTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\ByteChannelPool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\CachingTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\ClipTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\ConcatPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\ConcatTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\DownmixHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\EditedFramesTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\EditedPCMTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\FilePool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\Jpeg2AVCTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\PCMFlatternTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\Prores2AVCTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\RealTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\SeekableByteChannelWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\StereoDownmixTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\Transcode2AVCTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\VirtualPacketWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\WavTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\avc\AVCClipTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\movtool\streaming\tracks\avc\AVCConcatTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\BitmapUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\ColorUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\ImageConvert.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\RgbToYuv420j.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\RgbToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\RgbToYuv422p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Transform.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv420jToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv420jToYuv420.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv420pToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv420pToYuv422p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv422jToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv422jToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv422pToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv422pToYuv420j.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv422pToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv444jToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv444jToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv444pToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\scale\Yuv444pToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\testing\TestTool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\testing\VerifyTool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\java\org\jcodec\testing\jm.conf" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\jcodec\src\main\res\values\styles.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/FrameUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/FrameUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/IvfWriter.java" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/IvfWriter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/raw/pocoyo.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/raw/pocoyo_alpha.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/DecodeActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MediaPlayerSurface.iws" />
@@ -714,62 +56,110 @@
       <file leaf-file-name="VideoEncoder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.965517" vertical-offset="3591" max-vertical-offset="6102">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="6102">
               <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AltEncoder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/AltEncoder.java">
+      <file leaf-file-name="GLSurfaceViewActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/GLSurfaceViewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2034">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="1350">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaCodec.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaCodec.java">
+      <file leaf-file-name="MediaMetadataRetriever.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaMetadataRetriever.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="23959" max-vertical-offset="32886">
-              <caret line="1395" column="6" selection-start-line="1395" selection-start-column="6" selection-end-line="1395" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoSurfaceView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2394" max-vertical-offset="9252">
-              <caret line="180" column="30" selection-start-line="180" selection-start-column="30" selection-end-line="180" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4334" max-vertical-offset="8604">
+              <caret line="268" column="75" selection-start-line="268" selection-start-column="75" selection-end-line="268" selection-end-column="75" />
               <folding>
-                <element signature="e#18663#19062#0" expanded="true" />
-                <element signature="e#19043#19044#0" expanded="true" />
+                <element signature="e#11640#11641#0" expanded="true" />
+                <element signature="e#11702#11703#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="VideoSurfaceView.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.33250928" vertical-offset="19" max-vertical-offset="10908">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaPlayerSurfaceStubActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AltEncoderWrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/AltEncoderWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="203" max-vertical-offset="1188">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SurfaceViewActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/SurfaceViewActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="990">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MediaPlayerSurfaceStubActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.640853" vertical-offset="23" max-vertical-offset="1008">
-              <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="1026">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtomicInteger.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/java/util/concurrent/atomic/AtomicInteger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2388" max-vertical-offset="4212">
+              <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecodeActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/DecodeActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-59.03448" vertical-offset="1150" max-vertical-offset="3024">
+              <caret line="159" column="32" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
+                <element signature="e#1658#1659#0" expanded="true" />
+                <element signature="e#1704#1705#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoDecoder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="2106">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1596,814 +986,6 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/grafika">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="androidDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="assembleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="assembleDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="assembleDefault" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in Debug." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="bundleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in Release." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="bundleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="checkDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="checkReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugTestNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileDebugTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileReleaseJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileReleaseNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="compileReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Build 'debug' on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="connectedAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="connectedCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="copyDebugLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="copyReleaseLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="deviceCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="dexDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugTestResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateDebugTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateReleaseResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="installDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="lint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="lintDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Release build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="mergeDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="mergeDebugProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="mergeDebugTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="mergeDebugTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="mergeReleaseProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageDebugJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageDebugJniLibs" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageDebugLocalJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageReleaseJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageReleaseJniLibs" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageReleaseLocalJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="packageReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="preDebugBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="preDebugTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="preDexDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="prepareDebugTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="prepareReleaseDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processDebugTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processDebugTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processDebugTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="uninstallDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/grafika" />
-                <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/jcodec">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="androidDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="assembleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="assembleDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="assembleDefault" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in Debug." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="bundleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in Release." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="bundleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="checkDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="checkReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugTestNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileDebugTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileReleaseJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileReleaseNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="compileReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for Build 'debug' on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="connectedAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="connectedCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="copyDebugLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="copyReleaseLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="deviceCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="dexDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugTestResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateDebugTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateReleaseResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="installDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="lint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="lintDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Release build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="mergeDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="mergeDebugProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="mergeDebugTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="mergeDebugTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="mergeReleaseProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageDebugJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageDebugJniLibs" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageDebugLocalJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageReleaseJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageReleaseJniLibs" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageReleaseLocalJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="packageReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="preDebugBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="preDebugTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="preDexDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="prepareDebugTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="prepareReleaseDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processDebugTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processDebugTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processDebugTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the Test build for the Debug build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="uninstallDebugTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/jcodec" />
-                <option name="name" value="validateDebugSigning" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="modificationStamps">
@@ -2598,7 +1180,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/FrameUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/DecodeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/PlayerThread.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java" />
       </list>
     </option>
@@ -2635,28 +1220,16 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MediaPlayerSurface" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="MediaPlayerSurface" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2815,6 +1388,22 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaPlayerSurface" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -3127,14 +1716,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938856" sideWeight="0.70721203" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42307693" sideWeight="0.4138859" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20414202" sideWeight="0.4138859" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09270217" sideWeight="0.29224974" order="11" side_tool="false" content_ui="tabs" x="22" y="197" width="1814" height="467" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16074951" sideWeight="0.29224974" order="11" side_tool="false" content_ui="tabs" x="22" y="197" width="1814" height="467" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31539288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25618947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8059259" sideWeight="0.7070064" order="15" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3145,7 +1735,6 @@
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3199,10 +1788,51 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/SurfaceViewActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82824856" vertical-offset="84" max-vertical-offset="1045">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6336">
+          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/AltEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="2142">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaCodec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="25110" max-vertical-offset="33732">
+          <caret line="1395" column="6" selection-start-line="1395" selection-start-column="6" selection-end-line="1395" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3726" max-vertical-offset="9234">
+          <caret line="272" column="37" selection-start-line="272" selection-start-column="37" selection-end-line="272" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="630">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1098">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3333,14 +1963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/AltEncoderWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1188">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/view/Surface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5340102" vertical-offset="1526" max-vertical-offset="8820">
@@ -3348,18 +1970,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/opengl/GLES20.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3604061" vertical-offset="33485" max-vertical-offset="34470">
-          <caret line="1897" column="23" selection-start-line="1897" selection-start-column="23" selection-end-line="1897" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/IvfWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.95873785" vertical-offset="1225" max-vertical-offset="3222">
           <caret line="93" column="36" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3367,7 +1981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65550756" vertical-offset="77" max-vertical-offset="1062">
           <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3375,47 +1988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7775378" vertical-offset="270" max-vertical-offset="18396">
           <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.81827414" vertical-offset="9446" max-vertical-offset="60678">
-          <caret line="547" column="13" selection-start-line="547" selection-start-column="13" selection-end-line="547" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/GLSurfaceViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.965517" vertical-offset="3591" max-vertical-offset="6102">
-          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/AltEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="2034">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaCodec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="23959" max-vertical-offset="32886">
-          <caret line="1395" column="6" selection-start-line="1395" selection-start-column="6" selection-end-line="1395" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3423,14 +1995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.018274112" vertical-offset="0" max-vertical-offset="985">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2741117" vertical-offset="0" max-vertical-offset="985">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3443,21 +2007,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/AltEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2394" max-vertical-offset="9252">
-          <caret line="180" column="30" selection-start-line="180" selection-start-column="30" selection-end-line="180" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="2034">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/opengl/GLES20.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="3528" max-vertical-offset="34470">
+          <caret line="231" column="80" selection-start-line="231" selection-start-column="36" selection-end-line="231" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="22338" max-vertical-offset="60678">
+          <caret line="1325" column="22" selection-start-line="1325" selection-start-column="22" selection-end-line="1325" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/graphics/SurfaceTexture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2372" max-vertical-offset="6606">
+          <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/DecodeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-59.03448" vertical-offset="1150" max-vertical-offset="3024">
+          <caret line="159" column="32" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
           <folding>
-            <element signature="e#18663#19062#0" expanded="true" />
-            <element signature="e#19043#19044#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4230" max-vertical-offset="6336">
+          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaMetadataRetriever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4334" max-vertical-offset="8604">
+          <caret line="268" column="75" selection-start-line="268" selection-start-column="75" selection-end-line="268" selection-end-column="75" />
+          <folding>
+            <element signature="e#11640#11641#0" expanded="true" />
+            <element signature="e#11702#11703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/AltEncoderWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1188">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/SurfaceViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="990">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2388" max-vertical-offset="4212">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaCodec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="10076" max-vertical-offset="32886">
+          <caret line="610" column="22" selection-start-line="610" selection-start-column="22" selection-end-line="610" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/GLSurfaceViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39902675" vertical-offset="2570" max-vertical-offset="6264">
+          <caret line="194" column="29" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="2106">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.640853" vertical-offset="23" max-vertical-offset="1008">
-          <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="1026">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33250928" vertical-offset="19" max-vertical-offset="10908">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>

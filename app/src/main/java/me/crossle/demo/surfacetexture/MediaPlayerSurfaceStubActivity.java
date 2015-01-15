@@ -30,20 +30,21 @@ public class MediaPlayerSurfaceStubActivity extends Activity {
             mpSource.setDataSource(
                     afd0.getFileDescriptor(), afd0.getStartOffset(), afd0.getLength());
             afd0.close();
-            AssetFileDescriptor afd1 = mResources.openRawResourceFd(R.raw.dragon);
-            mpEffect.setDataSource(
-                    afd1.getFileDescriptor(), afd1.getStartOffset(), afd1.getLength());
-            afd1.close();
-            AssetFileDescriptor afd2 = mResources.openRawResourceFd(R.raw.dragon_alpha);
-            mpAlpha.setDataSource(
-                    afd2.getFileDescriptor(), afd2.getStartOffset(), afd2.getLength());
-            afd2.close();
+            AssetFileDescriptor afd1 = mResources.openRawResourceFd(R.raw.pocoyo);
+//            mpEffect.setDataSource(
+//                    afd1.getFileDescriptor(), afd1.getStartOffset(), afd1.getLength());
+//            afd1.close();
+            AssetFileDescriptor afd2 = mResources.openRawResourceFd(R.raw.pocoyo_alpha);
+//            mpAlpha.setDataSource(
+//                    afd2.getFileDescriptor(), afd2.getStartOffset(), afd2.getLength());
+//            afd2.close();
+            mVideoView = new VideoSurfaceView(this, mpSource, adf1, adf2);
+            setContentView(mVideoView);
         } catch (Exception e) {
             Log.e(TAG, e.getMessage(), e);
         }
 
-        mVideoView = new VideoSurfaceView(this, mpSource, mpEffect, mpAlpha);
-        setContentView(mVideoView);
+//        mVideoView = new VideoSurfaceView(this, mpSource, mpEffect, mpAlpha);
 
     }
 
