@@ -2,7 +2,6 @@ package me.crossle.demo.surfacetexture;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.res.AssetFileDescriptor;
 import android.graphics.SurfaceTexture;
 import android.media.MediaPlayer;
 import android.opengl.GLES20;
@@ -15,11 +14,6 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.Surface;
-import android.view.SurfaceView;
-
-import com.android.grafika.gles.EglCore;
-import com.android.grafika.gles.GlUtil;
-import com.android.grafika.gles.WindowSurface;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,7 +25,6 @@ import java.nio.IntBuffer;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
-import jcodec.containers.mxf.model.FileDescriptor;
 
 @SuppressLint("ViewConstructor")
 class VideoSurfaceView extends GLSurfaceView {
@@ -42,7 +35,7 @@ class VideoSurfaceView extends GLSurfaceView {
     private String mAlphaPath;
     private int mHeight, mWidth;
     private float mOffsetX, mOffsetY;
-    private static final boolean ENCODING = true;
+    private static final boolean ENCODING = false;
 
     public VideoSurfaceView(Context context, MediaPlayer mpSource, String effectPath, String alphaPath) {
         super(context);
@@ -202,7 +195,9 @@ class VideoSurfaceView extends GLSurfaceView {
         private SurfaceTexture sTexEffect;
         private SurfaceTexture sTexAlpha;
         private boolean updateSource = false;
+        private boolean effectTimeOut = false;
         private boolean updateEffect = false;
+        private boolean alphaTimeOut = false;
         private boolean updateAlpha = false;
 
         private static int GL_TEXTURE_EXTERNAL_OES = 0x8D65;
@@ -268,7 +263,6 @@ class VideoSurfaceView extends GLSurfaceView {
                     updateEffect = false;
                     updateAlpha = false;
                 }
-
 
                 Log.e("position check", "e = " + effectPosition + " a = " + alphaPosition + " diff = " + (effectPosition - alphaPosition));
             }
@@ -413,36 +407,55 @@ class VideoSurfaceView extends GLSurfaceView {
             usTexAlphaHandle = GLES20.glGetUniformLocation(mProgram, "sTexAlpha");
 
 
-
             sTexSource = new SurfaceTexture(textures[0]);
             sTexSource.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
-                @Override
-                public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                    synchronized (VideoRender.this) {
-                        updateSource = true;
-                        vdEffect.pollNextFrame();
-                        vdAlpha.pollNextFrame();
-                    }
-                }
-            });
+                                                       @Override
+                                                       public void onFrameAvailable(SurfaceTexture surfaceTexture) {
+                                                           synchronized (VideoRender.this) {
+                                                               updateSource = true;
+                                                               Log.e("sync tes", "main ue = " + updateEffect + " ua = " + updateAlpha);
+                                                               if (!updateEffect) {
+//                                                                   vdEffect.pollNextFrame(0);
+                                                                   vdEffect.pollNextFrame(effectTimeOut ? 1 : 0);
+                                                                   effectTimeOut = false;
+                                                               }
+                                                               if (!updateAlpha) {
+//                                                                   vdAlpha.pollNextFrame(0);
+                                                                   vdAlpha.pollNextFrame(alphaTimeOut ? 1 : 0);
+                                                                   alphaTimeOut = false;
+                                                               }
+                                                           }
+                                                       }
+                                                   }
+
+            );
             sTexEffect = new SurfaceTexture(textures[1]);
+
             sTexEffect.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
-                @Override
-                public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                    synchronized (VideoRender.this) {
-                        updateEffect = true;
-                    }
-                }
-            });
-            sTexAlpha = new SurfaceTexture(textures[2]);
+                                                       @Override
+                                                       public void onFrameAvailable(SurfaceTexture surfaceTexture) {
+                                                           synchronized (VideoRender.this) {
+                                                               updateEffect = true;
+                                                           }
+                                                       }
+                                                   }
+
+            );
+
+            sTexAlpha = new
+
+                    SurfaceTexture(textures[2]);
+
             sTexAlpha.setOnFrameAvailableListener(new SurfaceTexture.OnFrameAvailableListener() {
-                @Override
-                public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                    synchronized (VideoRender.this) {
-                        updateAlpha = true;
-                    }
-                }
-            });
+                                                      @Override
+                                                      public void onFrameAvailable(SurfaceTexture surfaceTexture) {
+                                                          synchronized (VideoRender.this) {
+                                                              updateAlpha = true;
+                                                          }
+                                                      }
+                                                  }
+
+            );
 
 
             Surface surface = new Surface(sTexSource);
@@ -450,11 +463,37 @@ class VideoSurfaceView extends GLSurfaceView {
             mpSource.setScreenOnWhilePlaying(true);
             surface.release();
             surface = new Surface(sTexEffect);
+
             vdEffect = new VideoDecoder(surface, effectPath);
+
+            vdEffect.setDecoderCallbacks(new VideoDecoder.DecoderCallbacks() {
+                                             @Override
+                                             public void onOutputTimeOut() {
+                                                 synchronized (VideoRender.this) {
+                                                     Log.e("sync test", "effect time out");
+                                                     effectTimeOut = true;
+                                                 }
+                                             }
+                                         }
+
+            );
             surface.release();
             surface = new Surface(sTexAlpha);
 
             vdAlpha = new VideoDecoder(surface, alphaPath);
+
+            vdAlpha.setDecoderCallbacks(new VideoDecoder.DecoderCallbacks() {
+                                            @Override
+                                            public void onOutputTimeOut() {
+                                                synchronized (VideoRender.this) {
+                                                    Log.e("sync test", "alpha time out");
+                                                    alphaTimeOut = true;
+                                                }
+                                            }
+                                        }
+
+            );
+
             surface.release();
             try {
                 mpSource.prepare();
@@ -462,7 +501,6 @@ class VideoSurfaceView extends GLSurfaceView {
                 Log.e(TAG, "media player prepare failed");
                 e.printStackTrace();
             }
-
             synchronized (this) {
                 updateSource = false;
                 updateEffect = false;
@@ -488,17 +526,16 @@ class VideoSurfaceView extends GLSurfaceView {
         }
 
 
-
         private void prepareFrameBuffer() {
             int[] values = new int[1];
 
 
             // Create a texture object and bind it.  This will be the color buffer.
             GLES20.glGenTextures(1, values, 0);
-            GlUtil.checkGlError("glGenTextures");
+            checkGlError("glGenTextures");
             offscreenTexture = values[0];   // expected > 0
             GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, offscreenTexture);
-            GlUtil.checkGlError("glBindTexture " + offscreenTexture);
+            checkGlError("glBindTexture " + offscreenTexture);
 
 
             // Create texture storage.
@@ -515,42 +552,43 @@ class VideoSurfaceView extends GLSurfaceView {
                     GLES20.GL_CLAMP_TO_EDGE);
             GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_WRAP_T,
                     GLES20.GL_CLAMP_TO_EDGE);
-            GlUtil.checkGlError("glTexParameter");
+            checkGlError("glTexParameter");
 
 
             GLES20.glGenFramebuffers(1, values, 0);
-            GlUtil.checkGlError("glGenFramebuffers");
+            checkGlError("glGenFramebuffers");
             frameBuffer = values[0];    // expected > 0
             Log.e("frame buffer", " = " + frameBuffer);
             GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER, frameBuffer);
-            GlUtil.checkGlError("glBindFramebuffer " + frameBuffer);
+            checkGlError("glBindFramebuffer " + frameBuffer);
 
             // Create a depth buffer and bind it.
             GLES20.glGenRenderbuffers(1, values, 0);
-            GlUtil.checkGlError("glGenRenderbuffers");
+            checkGlError("glGenRenderbuffers");
             depthBuffer = values[0];    // expected > 0
             GLES20.glBindRenderbuffer(GLES20.GL_RENDERBUFFER, depthBuffer);
-            GlUtil.checkGlError("glBindRenderbuffer " + depthBuffer);
+            checkGlError("glBindRenderbuffer " + depthBuffer);
 
             // Allocate storage for the depth buffer.
             GLES20.glRenderbufferStorage(GLES20.GL_RENDERBUFFER, GLES20.GL_DEPTH_COMPONENT16,
                     recWidth, recHeight);
-            GlUtil.checkGlError("glRenderbufferStorage");
+            checkGlError("glRenderbufferStorage");
 
 
             // Attach the depth buffer and the texture (color buffer) to the framebuffer object.
             GLES20.glFramebufferRenderbuffer(GLES20.GL_FRAMEBUFFER, GLES20.GL_DEPTH_ATTACHMENT,
                     GLES20.GL_RENDERBUFFER, depthBuffer);
-            GlUtil.checkGlError("glFramebufferRenderbuffer");
+            checkGlError("glFramebufferRenderbuffer");
             GLES20.glFramebufferTexture2D(GLES20.GL_FRAMEBUFFER, GLES20.GL_COLOR_ATTACHMENT0,
                     GLES20.GL_TEXTURE_2D, offscreenTexture, 0);
-            GlUtil.checkGlError("glFramebufferTexture2D");
+            checkGlError("glFramebufferTexture2D");
 
             // See if GLES is happy with all this.
             int status = GLES20.glCheckFramebufferStatus(GLES20.GL_FRAMEBUFFER);
             if (status != GLES20.GL_FRAMEBUFFER_COMPLETE) {
                 throw new RuntimeException("Framebuffer not complete, status=" + status);
             }
+            GLES20.glBindFramebuffer(GLES20.GL_FRAMEBUFFER, 0);
         }
 
 

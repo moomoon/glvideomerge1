@@ -19,484 +19,12 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: me.crossle.demo.surfacetexture" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca0eab34-f5ed-474e-bea9-b38473e2e6e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MP4Writer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MuxUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/PixelBuffer.java" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\algo\BiliearStreamInterpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\algo\BilinearInterpolator2D.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\algo\CubicSplineStreamInterpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\algo\DataConvert.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\algo\Interpolator2D.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\algo\SoundFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\algo\StreamGauss.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\algo\StreamInterpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\FrameGrab.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\JCodecException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\SequenceEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\UnsupportedFormatException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\android\FrameGrab.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\android\SequenceEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\android\SequenceMuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\specific\AVCMP4Adaptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\specific\ContainerAdaptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\api\specific\GenericAdaptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\AACConts.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\AACUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\BlockReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\BlockType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\BlockWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\ChannelPosition.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\ObjectType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\Profile.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\AACTab.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\Block.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\BlockCCE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\BlockCPE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\BlockDSE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\BlockFil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\BlockICS.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\BlockPCE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\aac\blocks\RawDataBlockType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\BitIO.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\Context.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\MConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\MDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\MEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\MQConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\MQDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\MQEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\TreeBinarizer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\common\biari\VPxBooleanEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\H264Const.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\H264Decoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\H264Encoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\H264Utils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\MappedH264ES.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\POCManager.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\BlockInterpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\CABACContst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\CAVLCReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\ChromaPredictionBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\CoeffTransformer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\Interpolator.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\Intra16x16PredictionBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\Intra4x4PredictionBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\Intra8x8PredictionBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\Prediction.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\SliceDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\SliceHeaderReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\aso\FlatMBlockMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\aso\MBToSliceGroupMap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\aso\MapManager.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\aso\Mapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\aso\PrebuiltMBlockMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\aso\SliceGroupMapBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\decode\deblock\DeblockingFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\encode\ConstantRateControl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\encode\DumbRateControl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\encode\RateControl.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\CABAC.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\CAVLC.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\AspectRatio.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\Frame.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\HRDParameters.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\MBType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\NALUnit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\NALUnitType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\PictureParameterSet.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\PredictionWeightTable.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\RefPicMarking.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\RefPicMarkingIDR.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\SEI.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\ScalingList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\ScalingMatrix.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\SeqParameterSet.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\SeqParameterSetExt.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\SliceHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\SliceType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\model\VUIParameters.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\write\CAVLCWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\write\NALUnitWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\io\write\SliceHeaderWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\h264\mp4\AvcCBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mjpeg\FrameHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mjpeg\JPEGBitStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mjpeg\JpegConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mjpeg\JpegDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mjpeg\JpegToThumb2x2.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mjpeg\JpegToThumb4x4.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mjpeg\ScanHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mjpeg\tools\Asserts.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\MPEGConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\MPEGDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\MPEGES.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\MPEGEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\MPEGPred.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\MPEGUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\SegmentReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\CopyrightExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\GOPHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\PictureCodingExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\PictureDisplayExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\PictureHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\PictureSpatialScalableExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\PictureTemporalScalableExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\QuantMatrixExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\SequenceDisplayExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\SequenceExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\SequenceHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg12\bitstream\SequenceScalableExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg4\es\DecoderConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg4\es\DecoderSpecific.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg4\es\Descriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg4\es\DescriptorFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg4\es\ES.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg4\es\NodeDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg4\es\SL.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\mpeg4\mp4\EsdsBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\ppm\PPMEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\Codebook.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\DCT2Prores.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\Mpeg2Prores.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\ProresConsts.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\ProresDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\ProresEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\ProresFix.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\ProresToProxy.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\ProresToThumb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\ProresToThumb2x2.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\prores\ProresToThumb4x4.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\raw\V210Decoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\raw\V210Encoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\s302\S302MDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\s302\S302MUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vp8\BooleanArithmeticDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vp8\FilterUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vp8\Macroblock.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vp8\VP8DCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vp8\VP8Decoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vp8\VP8Util.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vpx\VP8Encoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vpx\VPXBitstream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vpx\VPXConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vpx\VPXDCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\vpx\VPXQuantizer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\wav\ReaderLE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\wav\StringReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\wav\WavHeader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\wav\WavInput.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\wav\WavOutput.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\wav\WriterLE.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\codecs\y4m\Y4MDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\AndroidUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\ArrayUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\Assert.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\AudioDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\AudioFormat.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\AudioUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\AutoFileChannelWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\ByteArrayList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\ByteBufferSeekableByteChannel.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\Codec.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\CountingInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\DemuxerTrackMeta.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\FileChannelWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\IOUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\IntArrayList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\IntIntMap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\IntObjectMap.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\JCodecUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\LongArrayList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\NIOUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\PriorityCallable.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\PriorityFuture.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\ProxyInputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\SeekableByteChannel.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\SeekableDemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\StringUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\VideoDecoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\VideoEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\DCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\DCTRef.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\FfmpegIntDct.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\IDCT2x2.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\IDCT4x4.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\IntDCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\SimpleIDCT10Bit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\SlowDCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\dct\SparseIDCT.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\io\AutoPool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\io\AutoResource.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\io\BitReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\io\BitWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\io\DummyBitstreamReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\io\VLC.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\io\VLCBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\AudioBuffer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\AudioFrame.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\ChannelLabel.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\ColorSpace.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Frame.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Packet.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Picture.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Picture8Bit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Plane.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Point.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Rational.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\RationalLarge.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Rect.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Size.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\TapeTimecode.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\model\Unit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\tools\Debug.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\tools\ImageOP.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\tools\MD5.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\tools\MathUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\tools\ToJSON.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\tools\WavMerge.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\common\tools\WavSplit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\CuesIndexer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\EBMLException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\MKVDemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\MKVMuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\MKVRemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\Reader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\SeekHeadIndexer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\SimpleEBMLParser.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\Type.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\ebml\BinaryElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\ebml\DateElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\ebml\Element.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\ebml\FloatElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\ebml\MasterElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\ebml\SignedIntegerElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\ebml\StringElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\ebml\UnsignedIntegerElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Attachments.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Block.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\BlockElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\BlockGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Chapters.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Cluster.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\CuePoint.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\CueTrackPosition.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\EBML.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Frame.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Info.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\MatroskaBlock.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\MatroskaCluster.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Seek.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\SeekHead.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\SimpleTag.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\TagEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Tags.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Track.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\TrackEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\TrackEntryElement.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\elements\Tracks.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\util\ArrayCopy.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mkv\util\TLinkedList.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\Brand.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\Chunk.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\ChunkReader.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\ChunkWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\MP4DemuxerException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\MP4Packet.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\MP4Util.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\QTTimeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\TimeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\TrackType.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\AVC1Box.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\AliasBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\AudioSampleEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\Box.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\BoxFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\ChannelBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\ChunkOffsets64Box.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\ChunkOffsetsBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\CleanApertureExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\ClearApertureBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\ClipRegionBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\ColorExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\CompositionOffsetsBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\DataInfoBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\DataRefBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\Edit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\EditListBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\EncodedPixelBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\EndianBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\FielExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\FileTypeBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\FormatBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\FullBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\GamaExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\GenericMediaInfoBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\HandlerBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\Header.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\LeafBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\LoadSettingsBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\MP4ABox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\MediaBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\MediaHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\MediaInfoBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\MovieBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\MovieHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\NameBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\NodeBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\PixelAspectExt.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\ProductionApertureBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\SampleDescriptionBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\SampleEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\SampleSizesBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\SampleToChunkBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\SoundMediaHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\SyncSamplesBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\TimeToSampleBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\TimecodeMediaInfoBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\TimecodeSampleEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\TrackHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\TrakBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\UrlBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\VideoMediaHeaderBox.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\VideoSampleEntry.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\WaveExtension.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\channel\ChannelLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\channel\ChannelUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\boxes\channel\Label.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\demuxer\AbstractMP4DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\demuxer\FramesMP4DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\demuxer\MP4Demuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\demuxer\PCMMP4DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\demuxer\TimecodeMP4DemuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\muxer\AbstractMP4MuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\muxer\FramesMP4MuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\muxer\MP4Muxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\muxer\PCMMP4MuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mp4\muxer\TimecodeMP4MuxerTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mps\MPSDemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mps\MTSDemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\MXFConst.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\MXFDemuxer.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\AES3PCMDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\BER.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\CDCIEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\ContentStorage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\DeltaEntries.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\EssenceContainerData.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\FileDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\GenericDataEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\GenericDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\GenericPackage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\GenericPictureEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\GenericSoundEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\GenericTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\Identification.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\IndexEntries.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\IndexSegment.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\J2KPictureDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\KLV.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\MPEG2VideoDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\MXFInterchangeObject.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\MXFMetadata.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\MXFPartition.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\MXFPartitionPack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\MXFStructuralComponent.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\MXFUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\MaterialPackage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\Preface.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\RGBAEssenceDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\Sequence.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\SourceClip.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\SourcePackage.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\TimecodeComponent.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\TimelineTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\UL.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\model\WaveAudioDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\containers\mxf\streaming\MXFVirtualTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\filters\color\CVTColorFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\ChangeTimescale.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\Cut.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\Flattern.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\InplaceEdit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\MovDump.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\Paste.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\QTEdit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\QTRefEdit.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\ReExport.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\Remux.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\SetPAR.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\Strip.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\Undo.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\Util.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\WebOptimize.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\ConcurrentMovieRangeService.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\MovieHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\MovieRange.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\MovieSegment.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\VirtualMovie.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\VirtualPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\VirtualTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\ByteChannelPool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\CachingTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\ClipTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\ConcatPacket.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\ConcatTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\DownmixHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\EditedFramesTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\EditedPCMTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\FilePool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\Jpeg2AVCTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\PCMFlatternTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\Prores2AVCTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\RealTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\SeekableByteChannelWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\StereoDownmixTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\Transcode2AVCTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\VirtualPacketWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\WavTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\avc\AVCClipTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\movtool\streaming\tracks\avc\AVCConcatTrack.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\BitmapUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\ColorUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\ImageConvert.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\RgbToYuv420j.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\RgbToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\RgbToYuv422p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Transform.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv420jToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv420jToYuv420.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv420pToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv420pToYuv422p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv422jToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv422jToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv422pToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv422pToYuv420j.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv422pToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv444jToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv444jToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv444pToRgb.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\scale\Yuv444pToYuv420p.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\testing\TestTool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\testing\VerifyTool.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\jcodec\testing\jm.conf" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\me\crossle\demo\surfacetexture\AltEncoder.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\me\crossle\demo\surfacetexture\AltEncoderWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\java\me\crossle\demo\surfacetexture\DecodeActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\res\raw\dragon.mp4" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\res\raw\dragon_alpha.mp4" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\res\raw\pocoyo.mp4" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\res\raw\pocoyo_alpha.mp4" afterPath="" />
-      <change type="DELETED" beforePath="E:\glvideomerge1\app\src\main\res\raw\testvideo.3gp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java" afterPath="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MediaPlayerSurface.iws" />
@@ -523,18 +51,18 @@
       <file leaf-file-name="VideoEncoder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.84" vertical-offset="3978" max-vertical-offset="6102">
-              <caret line="256" column="5" selection-start-line="256" selection-start-column="5" selection-end-line="256" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2574" max-vertical-offset="6102">
+              <caret line="268" column="68" selection-start-line="268" selection-start-column="68" selection-end-line="268" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaPlayerSurfaceStubActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MediaPlayerSurfaceStubActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67614216" vertical-offset="0" max-vertical-offset="985">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -543,8 +71,8 @@
       <file leaf-file-name="VideoDecoder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.68" vertical-offset="995" max-vertical-offset="2106">
-              <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="2340">
+              <caret line="84" column="85" selection-start-line="84" selection-start-column="85" selection-end-line="84" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -553,8 +81,8 @@
       <file leaf-file-name="MediaCodec.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaCodec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.0" vertical-offset="10274" max-vertical-offset="32886">
-              <caret line="653" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="653" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="17626" max-vertical-offset="32886">
+              <caret line="1032" column="0" selection-start-line="1032" selection-start-column="0" selection-end-line="1032" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -563,7 +91,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.88" vertical-offset="0" max-vertical-offset="648">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
               <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
@@ -573,9 +101,39 @@
       <file leaf-file-name="MP4Writer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MP4Writer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.68" vertical-offset="0" max-vertical-offset="1296">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
               <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoSurfaceView.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5482234" vertical-offset="2052" max-vertical-offset="11826">
+              <caret line="144" column="21" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1611#1612#0" expanded="true" />
+                <element signature="e#1655#1656#0" expanded="true" />
+                <element signature="e#1827#1828#0" expanded="true" />
+                <element signature="e#1871#1872#0" expanded="true" />
+                <element signature="e#3162#3376#0" expanded="true" />
+                <element signature="e#3365#3366#0" expanded="true" />
+                <element signature="e#15899#17505#0" expanded="true" />
+                <element signature="e#17451#17452#0" expanded="true" />
+                <element signature="e#17632#18209#0" expanded="true" />
+                <element signature="e#18155#18156#0" expanded="true" />
+                <element signature="e#18356#18925#0" expanded="true" />
+                <element signature="e#18872#18873#0" expanded="true" />
+                <element signature="e#19276#19836#0" expanded="true" />
+                <element signature="e#19792#19793#0" expanded="true" />
+                <element signature="e#20032#20582#0" expanded="true" />
+                <element signature="e#20539#20540#0" expanded="true" />
+                <element signature="e#21188#21587#0" expanded="true" />
+                <element signature="e#21568#21569#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -595,7 +153,7 @@
       <file leaf-file-name="PixelBuffer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/PixelBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.36" vertical-offset="810" max-vertical-offset="3078">
+            <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="3078">
               <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -604,27 +162,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoSurfaceView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.48" vertical-offset="9405" max-vertical-offset="10422">
-              <caret line="584" column="31" selection-start-line="584" selection-start-column="31" selection-end-line="584" selection-end-column="31" />
-              <folding>
-                <element signature="e#16068#16471#0" expanded="true" />
-                <element signature="e#16456#16457#0" expanded="true" />
-                <element signature="e#16583#16887#0" expanded="true" />
-                <element signature="e#16872#16873#0" expanded="true" />
-                <element signature="e#16997#17300#0" expanded="true" />
-                <element signature="e#17285#17286#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FrameBuffer1D.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/androidx/media/filterfw/FrameBuffer1D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.32" vertical-offset="0" max-vertical-offset="1530">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
               <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
               <folding />
             </state>
@@ -1647,17 +1188,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/PlayerThread.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gles/GlUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/android/grafika/gles/GlUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/PixelBuffer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoMergeView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/DecodeActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MP4Writer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MuxUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java" />
       </list>
     </option>
   </component>
@@ -1805,6 +1346,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="raw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MediaPlayerSurface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glvideomerge1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="surfacetexture" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2124,7 +1695,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="0" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938856" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -2137,13 +1708,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5493097" sideWeight="0.70775026" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25590178" sideWeight="0.4138859" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33935744" sideWeight="0.4138859" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21246459" sideWeight="0.29224974" order="11" side_tool="false" content_ui="tabs" x="22" y="197" width="1814" height="467" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39759037" sideWeight="0.29224974" order="11" side_tool="false" content_ui="tabs" x="22" y="197" width="1814" height="467" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22820237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22820237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497309" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8059259" sideWeight="0.7070064" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2339,14 +1910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35523114" vertical-offset="2624" max-vertical-offset="6264">
-          <caret line="195" column="20" selection-start-line="195" selection-start-column="20" selection-end-line="195" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/content/res/AssetFileDescriptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52554744" vertical-offset="0" max-vertical-offset="6156">
@@ -2449,9 +2012,9 @@
         <state vertical-scroll-proportion="0.33299494" vertical-offset="1238" max-vertical-offset="6678">
           <caret line="109" column="40" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
           <folding>
-            <element signature="e#5195#5196#0" expanded="true" />
-            <element signature="e#16223#16224#0" expanded="true" />
-            <element signature="e#16266#16267#0" expanded="true" />
+            <element signature="e#5195#5196#0" expanded="false" />
+            <element signature="e#16223#16224#0" expanded="false" />
+            <element signature="e#16266#16267#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2472,76 +2035,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.84" vertical-offset="3978" max-vertical-offset="6102">
-          <caret line="256" column="5" selection-start-line="256" selection-start-column="5" selection-end-line="256" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.68" vertical-offset="995" max-vertical-offset="2106">
-          <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaCodec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.0" vertical-offset="10274" max-vertical-offset="32886">
-          <caret line="653" column="0" selection-start-line="652" selection-start-column="0" selection-end-line="653" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/PixelBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.36" vertical-offset="810" max-vertical-offset="3078">
+        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="3078">
           <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.48" vertical-offset="9405" max-vertical-offset="10422">
-          <caret line="584" column="31" selection-start-line="584" selection-start-column="31" selection-end-line="584" selection-end-column="31" />
-          <folding>
-            <element signature="e#16068#16471#0" expanded="true" />
-            <element signature="e#16456#16457#0" expanded="true" />
-            <element signature="e#16583#16887#0" expanded="true" />
-            <element signature="e#16872#16873#0" expanded="true" />
-            <element signature="e#16997#17300#0" expanded="true" />
-            <element signature="e#17285#17286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/androidx/media/filterfw/FrameBuffer1D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.32" vertical-offset="0" max-vertical-offset="1530">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.88" vertical-offset="0" max-vertical-offset="648">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MP4Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.68" vertical-offset="0" max-vertical-offset="1296">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2555,11 +2055,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/androidx/media/filterfw/FrameBuffer1D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44228432" vertical-offset="4496" max-vertical-offset="6264">
+          <caret line="305" column="7" selection-start-line="305" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MediaPlayerSurfaceStubActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67614216" vertical-offset="0" max-vertical-offset="985">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Users/leapin/AppData/Local/Android/sdk/sources/android-21/android/media/MediaCodec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17626" max-vertical-offset="32886">
+          <caret line="1032" column="0" selection-start-line="1032" selection-start-column="0" selection-end-line="1032" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/MP4Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="2340">
+          <caret line="84" column="85" selection-start-line="84" selection-start-column="85" selection-end-line="84" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2574" max-vertical-offset="6102">
+          <caret line="268" column="68" selection-start-line="268" selection-start-column="68" selection-end-line="268" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/me/crossle/demo/surfacetexture/VideoSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5482234" vertical-offset="2052" max-vertical-offset="11826">
+          <caret line="144" column="21" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1871#1872#0" expanded="true" />
+            <element signature="e#3162#3376#0" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#15899#17505#0" expanded="true" />
+            <element signature="e#17451#17452#0" expanded="true" />
+            <element signature="e#17632#18209#0" expanded="true" />
+            <element signature="e#18155#18156#0" expanded="true" />
+            <element signature="e#18356#18925#0" expanded="true" />
+            <element signature="e#18872#18873#0" expanded="true" />
+            <element signature="e#19276#19836#0" expanded="true" />
+            <element signature="e#19792#19793#0" expanded="true" />
+            <element signature="e#20032#20582#0" expanded="true" />
+            <element signature="e#20539#20540#0" expanded="true" />
+            <element signature="e#21188#21587#0" expanded="true" />
+            <element signature="e#21568#21569#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

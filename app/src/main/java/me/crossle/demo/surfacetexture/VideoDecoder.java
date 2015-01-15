@@ -18,12 +18,18 @@ public class VideoDecoder {
     private MediaCodec decoder;
     private Surface surface;
     private int mFrameIndex;
+    private DecoderCallbacks mDecoderCallbacks;
 
     ByteBuffer[] inputBuffers;
     ByteBuffer[] outputBuffers;
     MediaCodec.BufferInfo info = new MediaCodec.BufferInfo();
     boolean isEOS = false;
     long startMs;
+
+
+    public void setDecoderCallbacks(DecoderCallbacks dc) {
+        this.mDecoderCallbacks = dc;
+    }
 
 
     public VideoDecoder(Surface surface, String filePath) {
@@ -65,8 +71,9 @@ public class VideoDecoder {
         startMs = System.currentTimeMillis();
     }
 
-    public void pollNextFrame() {
+    public void pollNextFrame(int skip) {
         if (!isEOS) {
+//            int inIndex = decoder.dequeueInputBuffer(10000);
             int inIndex = decoder.dequeueInputBuffer(10000);
             if (inIndex >= 0) {
                 ByteBuffer buffer = inputBuffers[inIndex];
@@ -95,6 +102,9 @@ public class VideoDecoder {
                 Log.d("DecodeActivity", "New format " + decoder.getOutputFormat());
                 break;
             case MediaCodec.INFO_TRY_AGAIN_LATER:
+                if (null != mDecoderCallbacks) {
+                    mDecoderCallbacks.onOutputTimeOut();
+                }
                 Log.d("DecodeActivity", "dequeueOutputBuffer timed out!");
                 break;
             default:
@@ -114,6 +124,11 @@ public class VideoDecoder {
             decoder.release();
             extractor.release();
         }
+    }
+
+
+    public interface DecoderCallbacks {
+        public void onOutputTimeOut();
     }
 
 }
