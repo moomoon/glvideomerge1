@@ -29,10 +29,12 @@ public class GLUtils {
     public static int createProgram(String vertexSource, String fragmentSource) {
         int vertexShader = loadShader(GLES20.GL_VERTEX_SHADER, vertexSource);
         if (vertexShader == 0) {
+            Log.e("createProgram", "vertexShader = 0");
             return 0;
         }
         int pixelShader = loadShader(GLES20.GL_FRAGMENT_SHADER, fragmentSource);
         if (pixelShader == 0) {
+            Log.e("createProgram", "fragmentShader = 0");
             return 0;
         }
 

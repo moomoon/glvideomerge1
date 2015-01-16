@@ -23,16 +23,20 @@
         <activity
             android:name=".GLSurfaceViewActivity"
             android:label="@string/app_name"></activity>
-        <activity
-            android:name=".MediaPlayerSurfaceStubActivity"
-            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape">
+        <activity android:name=".FXActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MediaPlayerSurfaceStubActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+
         </activity>
     </application>
 

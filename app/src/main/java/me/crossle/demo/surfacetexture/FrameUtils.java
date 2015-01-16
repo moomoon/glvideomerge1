@@ -50,4 +50,8 @@ public class FrameUtils {
     public static void encodeYUV420SP(byte[] yuv420, int[] argb, int width, int height) {
         encodeYUV420SPInternal(yuv420, argb, width, height, false);
     }
+
+    public static void encodeYUV420PFlipped(byte[] yuv420, int[] argb, int width, int height) {
+//        TODO
+    }
 }
