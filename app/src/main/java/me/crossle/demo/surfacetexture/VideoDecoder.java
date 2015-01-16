@@ -24,6 +24,7 @@ public class VideoDecoder {
     ByteBuffer[] outputBuffers;
     MediaCodec.BufferInfo info = new MediaCodec.BufferInfo();
     boolean isEOS = false;
+    boolean osEOS = false;
     long startMs;
 
 
@@ -71,7 +72,7 @@ public class VideoDecoder {
         startMs = System.currentTimeMillis();
     }
 
-    public void pollNextFrame(int skip) {
+    public boolean pollNextFrame() {
         if (!isEOS) {
 //            int inIndex = decoder.dequeueInputBuffer(10000);
             int inIndex = decoder.dequeueInputBuffer(10000);
@@ -91,39 +92,43 @@ public class VideoDecoder {
                 }
             }
         }
+        if (!osEOS) {
 
-        int outIndex = decoder.dequeueOutputBuffer(info, 10000);
-        switch (outIndex) {
-            case MediaCodec.INFO_OUTPUT_BUFFERS_CHANGED:
-                Log.d("DecodeActivity", "INFO_OUTPUT_BUFFERS_CHANGED");
-                outputBuffers = decoder.getOutputBuffers();
-                break;
-            case MediaCodec.INFO_OUTPUT_FORMAT_CHANGED:
-                Log.d("DecodeActivity", "New format " + decoder.getOutputFormat());
-                break;
-            case MediaCodec.INFO_TRY_AGAIN_LATER:
-                if (null != mDecoderCallbacks) {
-                    mDecoderCallbacks.onOutputTimeOut();
-                }
-                Log.d("DecodeActivity", "dequeueOutputBuffer timed out!");
-                break;
-            default:
-                ByteBuffer buffer = outputBuffers[outIndex];
-                Log.v("DecodeActivity", "We can't use this buffer but render it due to the API limit, " + buffer);
+            int outIndex = decoder.dequeueOutputBuffer(info, 10000);
+            switch (outIndex) {
+                case MediaCodec.INFO_OUTPUT_BUFFERS_CHANGED:
+                    Log.d("DecodeActivity", "INFO_OUTPUT_BUFFERS_CHANGED");
+                    outputBuffers = decoder.getOutputBuffers();
+                    break;
+                case MediaCodec.INFO_OUTPUT_FORMAT_CHANGED:
+                    Log.d("DecodeActivity", "New format " + decoder.getOutputFormat());
+                    break;
+                case MediaCodec.INFO_TRY_AGAIN_LATER:
+                    if (null != mDecoderCallbacks) {
+                        mDecoderCallbacks.onOutputTimeOut();
+                    }
+                    Log.d("DecodeActivity", "dequeueOutputBuffer timed out!");
+                    break;
+                default:
+                    ByteBuffer buffer = outputBuffers[outIndex];
+                    Log.v("DecodeActivity", "We can't use this buffer but render it due to the API limit, " + buffer);
 
-                // We use a very simple clock to keep the video FPS, or the video
-                // playback will be too fast
-                decoder.releaseOutputBuffer(outIndex, true);
-                break;
+                    // We use a very simple clock to keep the video FPS, or the video
+                    // playback will be too fast
+                    decoder.releaseOutputBuffer(outIndex, true);
+                    break;
+            }
+
+            // All decoded frames have been rendered, we can stop playing now
+            if ((info.flags & MediaCodec.BUFFER_FLAG_END_OF_STREAM) != 0) {
+                Log.d("DecodeActivity", "OutputBuffer BUFFER_FLAG_END_OF_STREAM");
+                osEOS = true;
+                decoder.stop();
+                decoder.release();
+                extractor.release();
+            }
         }
-
-        // All decoded frames have been rendered, we can stop playing now
-        if ((info.flags & MediaCodec.BUFFER_FLAG_END_OF_STREAM) != 0) {
-            Log.d("DecodeActivity", "OutputBuffer BUFFER_FLAG_END_OF_STREAM");
-            decoder.stop();
-            decoder.release();
-            extractor.release();
-        }
+        return !(isEOS && osEOS);
     }
 
 

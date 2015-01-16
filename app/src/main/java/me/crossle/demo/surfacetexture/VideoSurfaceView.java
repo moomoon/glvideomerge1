@@ -44,7 +44,7 @@ class VideoSurfaceView extends GLSurfaceView {
         this.mMPSource = mpSource;
         this.mEffectPath = effectPath;
         this.mAlphaPath = alphaPath;
-        mRenderer = new VideoRender(context);
+        mRenderer = new VideoRender();
         setRenderer(mRenderer);
         mDetector = new GestureDetector(context, new GestureDetector.OnGestureListener() {
             @Override
@@ -225,7 +225,7 @@ class VideoSurfaceView extends GLSurfaceView {
             this.transZ = z;
         }
 
-        public VideoRender(Context context) {
+        public VideoRender() {
             mTriangleVertices = ByteBuffer.allocateDirect(
                     mTriangleVerticesData.length * FLOAT_SIZE_BYTES)
                     .order(ByteOrder.nativeOrder()).asFloatBuffer();
@@ -416,12 +416,12 @@ class VideoSurfaceView extends GLSurfaceView {
                                                                Log.e("sync tes", "main ue = " + updateEffect + " ua = " + updateAlpha);
                                                                if (!updateEffect) {
 //                                                                   vdEffect.pollNextFrame(0);
-                                                                   vdEffect.pollNextFrame(effectTimeOut ? 1 : 0);
+                                                                   vdEffect.pollNextFrame();
                                                                    effectTimeOut = false;
                                                                }
                                                                if (!updateAlpha) {
 //                                                                   vdAlpha.pollNextFrame(0);
-                                                                   vdAlpha.pollNextFrame(alphaTimeOut ? 1 : 0);
+                                                                   vdAlpha.pollNextFrame();
                                                                    alphaTimeOut = false;
                                                                }
                                                            }
