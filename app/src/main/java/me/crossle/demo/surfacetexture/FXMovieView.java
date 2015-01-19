@@ -7,13 +7,11 @@ import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
+import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.Choreographer;
 import android.view.Surface;
-
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -43,6 +41,16 @@ public class FXMovieView extends GLSurfaceView {
     private int mViewWidth, mViewHeight;
     private ViewHandler mHandler;
     private FXRenderer mRenderer;
+    private long mFrameTimeMillis;
+    private long mLastFrameMillis;
+
+    private final Runnable mBeacon = new Runnable() {
+        @Override
+        public void run() {
+            requestRender();
+            mLastFrameMillis = SystemClock.uptimeMillis();
+        }
+    };
 
     public FXMovieView(Context context) {
         super(context);
@@ -50,16 +58,29 @@ public class FXMovieView extends GLSurfaceView {
         mHandler = new ViewHandler(this);
         mRenderer = new FXRenderer(mHandler);
         setRenderer(mRenderer);
-//        setRenderMode(RENDERMODE_WHEN_DIRTY);
+        setRenderMode(RENDERMODE_WHEN_DIRTY);
     }
 
     public void config(Config config) {
         config.validate();
         this.mConfig = config;
+        this.mFrameTimeMillis = 1000L * mConfig.frameTick / mConfig.timeScale ;
         setStatus(STATUS_CONFIGURED);
         tryUpdateSize();
         mRenderer.setValidConfig(config);
     }
+
+    private void signalRenderer(){
+        mHandler.removeCallbacks(mBeacon);
+        long remain = mFrameTimeMillis-SystemClock.uptimeMillis() + mLastFrameMillis;
+        Log.e("onFrameAvailable emit", "remain = " + remain);
+        if(remain <= 0){
+            mBeacon.run();
+        } else {
+            mHandler.postDelayed(mBeacon, remain);
+        }
+    }
+
 
     public void prepare() {
         setStatus(STATUS_PREPARED);
@@ -216,12 +237,15 @@ public class FXMovieView extends GLSurfaceView {
             }
             switch (msg.what) {
                 case MSG_RENDER:
-                    view.requestRender();
+                    view.signalRenderer();
                     break;
                 case MSG_STOP:
                     view.selfStop();
+                    break;
                 case MSG_AUTO_START:
                     view.selfStart();
+                    break;
+
             }
         }
 
@@ -277,7 +301,9 @@ public class FXMovieView extends GLSurfaceView {
         }
     }
 
-    private static class FXRenderer implements Renderer, Choreographer.FrameCallback {
+    private static class FXRenderer implements Renderer
+//            , Choreographer.FrameCallback
+    {
         private float transX, transY, transZ;
 
         private static final int FLOAT_SIZE_BYTES = 4;
@@ -471,10 +497,10 @@ public class FXMovieView extends GLSurfaceView {
                     new SurfaceTexture.OnFrameAvailableListener() {
                         @Override
                         public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                            Log.e("onFrameAvailable", "source");
+                            Log.e("onFrameAvailable s", "source");
                             synchronized (FXRenderer.this) {
                                 sourceUpdated = true;
-//Log.e("sync tes", "main ue = " + updateEffect + " ua = " + updateAlpha);
+                                Log.e("request render", "main ue = " + effectUpdated + " ua = " + alphaUpdated);
                                 checkUpdate();
                             }
                         }
@@ -485,11 +511,15 @@ public class FXMovieView extends GLSurfaceView {
 
             texEffect.setOnFrameAvailableListener(
                     new SurfaceTexture.OnFrameAvailableListener() {
+                        private long start = SystemClock.uptimeMillis();
                         @Override
                         public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                            Log.e("onFrameAvailable", "effect");
+                            long now = SystemClock.uptimeMillis();
+                            Log.e("onFrameAvailable e", "" + (now - start));
+                            start = now;
                             synchronized (FXRenderer.this) {
                                 effectUpdated = true;
+                                Log.e("request render", "main us = " + sourceUpdated + " ua = " + alphaUpdated);
                                 checkUpdate();
                             }
                         }
@@ -503,9 +533,10 @@ public class FXMovieView extends GLSurfaceView {
                     new SurfaceTexture.OnFrameAvailableListener() {
                         @Override
                         public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-                            Log.e("onFrameAvailable", "alpha");
+                            Log.e("onFrameAvailable a", "alpha");
                             synchronized (FXRenderer.this) {
                                 alphaUpdated = true;
+                                Log.e("request render", "main us = " + sourceUpdated + " ue = " + effectUpdated);
                                 checkUpdate();
                             }
                         }
@@ -517,6 +548,7 @@ public class FXMovieView extends GLSurfaceView {
             final long minInterval = frameTimeNanoSec / 1000000L;
 
             Surface surface = new Surface(texSource);
+            Log.e("minInterval", "minInterval = " + minInterval);
 //            vdSource = new VideoDecoder(surface, validConfig.sourcePath);
             sourceThread = new DecodeThread(validConfig.sourcePath, surface, minInterval);
             sourceThread.setOnDecodeStopListener(new DecodeThread.OnDecodeStopListener() {
@@ -610,20 +642,13 @@ public class FXMovieView extends GLSurfaceView {
 
 
         public void start() {
-            Log.e("start", "started");
+            Log.e("render start", "started");
             sourceThread.start();
             effectThread.start();
             alphaThread.start();
-//            vdSource.start();
-//            vdEffect.start();
-//            vdAlpha.start();
-            Looper.prepare();
-            Choreographer.getInstance().postFrameCallback(this);
-            Log.e("start", "poll first frame");
+            Log.e("render start", "poll first frame");
             pollNextFrame();
-//            sourceThread.sendPollNextFrame();
-//            effectThread.sendPollNextFrame();
-//            alphaThread.sendPollNextFrame();
+            viewHandler.sendRender();
         }
 
         private void stop() {
@@ -653,8 +678,8 @@ public class FXMovieView extends GLSurfaceView {
                     texEffect.getTransformMatrix(stMEffect);
                     effectUpdated = false;
                     alphaUpdated = false;
+                    pollNextFrame();
                 }
-                pollNextFrame();
             }
 
 
@@ -823,6 +848,7 @@ public class FXMovieView extends GLSurfaceView {
             boolean update = sourceUpdated;
             update &= effectUpdated || effectStopped;
             update &= alphaUpdated || alphaStopped;
+            Log.e("request render check update", "u = " + update + " su = " + sourceUpdated + " eu = " + effectUpdated + " au = " + alphaUpdated);
             if (update) {
                 viewHandler.sendRender();
             }
@@ -830,27 +856,29 @@ public class FXMovieView extends GLSurfaceView {
         }
 
         private void pollNextFrame() {
+            Log.e("decode 1", "start poll");
             sourceThread.sendPollNextFrame();
             effectThread.sendPollNextFrame();
             alphaThread.sendPollNextFrame();
+            Log.e("decode 1", "end poll");
 //            vdAlpha.pollNextFrame();
 //            vdEffect.pollNextFrame();
 //            vdSource.pollNextFrame();
         }
 
-
-        @Override
-        public void doFrame(long frameTimeNanos) {
-            Log.e("doFrame", "invoked");
+//
+//        @Override
+//        public void doFrame(long frameTimeNanos) {
+//            Log.e("doFrame", "invoked");
 
 //            if (checkUpdate()) {
 //                Choreographer.getInstance().postFrameCallbackDelayed(this, frameTimeNanoSec);
 //            } else {
 //                Choreographer.getInstance().postFrameCallback(this);
 //            }
-            checkUpdate();
-            Choreographer.getInstance().postFrameCallback(this);
-            pollNextFrame();
-        }
+//            checkUpdate();
+//            Choreographer.getInstance().postFrameCallback(this);
+//            pollNextFrame();
+//        }
     }
 }

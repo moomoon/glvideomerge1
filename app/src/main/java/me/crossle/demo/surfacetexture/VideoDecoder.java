@@ -45,6 +45,7 @@ public class VideoDecoder {
         for (int i = 0; i < extractor.getTrackCount(); i++) {
             MediaFormat format = extractor.getTrackFormat(i);
             String mime = format.getString(MediaFormat.KEY_MIME);
+            Log.e("mime", "mime = " + mime);
             if (mime.startsWith("video/")) {
                 extractor.selectTrack(i);
                 try {
@@ -75,7 +76,8 @@ public class VideoDecoder {
     public boolean pollNextFrame() {
         if (!isEOS) {
 //            int inIndex = decoder.dequeueInputBuffer(10000);
-            int inIndex = decoder.dequeueInputBuffer(10000);
+//            int inIndex = decoder.dequeueInputBuffer(10000);
+            int inIndex = decoder.dequeueInputBuffer(-1);
             if (inIndex >= 0) {
                 ByteBuffer buffer = inputBuffers[inIndex];
                 int sampleSize = extractor.readSampleData(buffer, 0);
@@ -95,13 +97,20 @@ public class VideoDecoder {
         if (!osEOS) {
 
             int outIndex = decoder.dequeueOutputBuffer(info, 10000);
+//            int outIndex = decoder.dequeueOutputBuffer(info, -1);
             switch (outIndex) {
                 case MediaCodec.INFO_OUTPUT_BUFFERS_CHANGED:
                     Log.d("DecodeActivity", "INFO_OUTPUT_BUFFERS_CHANGED");
                     outputBuffers = decoder.getOutputBuffers();
+                    if (null != mDecoderCallbacks) {
+                        mDecoderCallbacks.onBufferChanged();
+                    }
                     break;
                 case MediaCodec.INFO_OUTPUT_FORMAT_CHANGED:
                     Log.d("DecodeActivity", "New format " + decoder.getOutputFormat());
+                    if (null != mDecoderCallbacks) {
+                        mDecoderCallbacks.onFormatChanged();
+                    }
                     break;
                 case MediaCodec.INFO_TRY_AGAIN_LATER:
                     if (null != mDecoderCallbacks) {
@@ -134,6 +143,10 @@ public class VideoDecoder {
 
     public interface DecoderCallbacks {
         public void onOutputTimeOut();
+
+        public void onBufferChanged();
+
+        public void onFormatChanged();
     }
 
 }

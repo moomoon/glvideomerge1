@@ -467,6 +467,23 @@ class VideoSurfaceView extends GLSurfaceView {
             vdEffect = new VideoDecoder(surface, effectPath);
 
             vdEffect.setDecoderCallbacks(new VideoDecoder.DecoderCallbacks() {
+
+                                             @Override
+                                             public void onBufferChanged() {
+                                                 synchronized (VideoRender.this) {
+                                                     Log.e("sync test", "effect time out");
+                                                     effectTimeOut = true;
+                                                 }
+                                             }
+
+                                             @Override
+                                             public void onFormatChanged() {
+                                                 synchronized (VideoRender.this) {
+                                                     Log.e("sync test", "effect time out");
+                                                     effectTimeOut = true;
+                                                 }
+                                             }
+
                                              @Override
                                              public void onOutputTimeOut() {
                                                  synchronized (VideoRender.this) {
@@ -483,6 +500,24 @@ class VideoSurfaceView extends GLSurfaceView {
             vdAlpha = new VideoDecoder(surface, alphaPath);
 
             vdAlpha.setDecoderCallbacks(new VideoDecoder.DecoderCallbacks() {
+                                            @Override
+                                            public void onBufferChanged() {
+                                                synchronized (VideoRender.this) {
+                                                    Log.e("sync test", "alpha time out");
+                                                    alphaTimeOut = true;
+                                                }
+
+                                            }
+
+                                            @Override
+                                            public void onFormatChanged() {
+                                                synchronized (VideoRender.this) {
+                                                    Log.e("sync test", "alpha time out");
+                                                    alphaTimeOut = true;
+                                                }
+
+                                            }
+
                                             @Override
                                             public void onOutputTimeOut() {
                                                 synchronized (VideoRender.this) {
